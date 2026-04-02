@@ -1,0 +1,16 @@
+{
+  "id": "breadcrumbs",
+  "type": "SharedSlice",
+  "name": "Breadcrumbs",
+  "description": "Breadcrumbs",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": ""
+    }
+  ]
+}

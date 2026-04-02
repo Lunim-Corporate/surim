@@ -1,0 +1,31 @@
+{
+  "id": "parallax_line",
+  "type": "SharedSlice",
+  "name": "ParallaxLine",
+  "description": "Timeline with progressive line animation and alternating content. Horizontal on desktop, vertical on mobile.",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "",
+      "version": "initial",
+      "description": "Default variation",
+      "imageUrl": "",
+      "primary": {
+        "title": { "type": "StructuredText", "config": { "label": "Title", "single": "heading2", "placeholder": "Business Affairs" } },
+        "subtitle": { "type": "Text", "config": { "label": "Subtitle", "placeholder": "Underpinned by Web3 Smart Contracts" } },
+        "description": { "type": "StructuredText", "config": { "label": "Description", "multi": "paragraph,strong,em", "placeholder": "Ensuring IP protection whilst enabling automated, transparent revenue distribution." } },
+        "background_image": { "type": "Image", "config": { "label": "Background Image", "constraint": { "width": 1920, "height": 1080 }, "thumbnails": [] } }
+      },
+      "items": {
+        "step_title": { "type": "Text", "config": { "label": "Step Title" } },
+        "step_description": { "type": "Text", "config": { "label": "Step Description" } },
+        "top_title": { "type": "Text", "config": { "label": "Top Title" } },
+        "top_description": { "type": "StructuredText", "config": { "label": "Top Description", "multi": "paragraph,strong,em" } },
+        "bottom_title": { "type": "Text", "config": { "label": "Bottom Title" } },
+        "bottom_description": { "type": "StructuredText", "config": { "label": "Bottom Description", "multi": "paragraph,strong,em" } },
+        "node_image": { "type": "Image", "config": { "label": "Node Image", "constraint": { "width": 160, "height": 160 }, "thumbnails": [] } }
+      }
+    }
+  ]
+}

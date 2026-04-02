@@ -1,0 +1,70 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"title": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading2",
+						"content": {
+							"text": "Build"
+						}
+					}
+				]
+			}
+		},
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": [
+					[
+						"icon_text",
+						{
+							"__TYPE__": "FieldContent",
+							"value": "check",
+							"type": "Text"
+						}
+					],
+					[
+						"item_title",
+						{
+							"__TYPE__": "StructuredTextContent",
+							"value": [
+								{
+									"type": "heading1",
+									"content": {
+										"text": "Motor"
+									}
+								}
+							]
+						}
+					],
+					[
+						"weeks",
+						{
+							"__TYPE__": "FieldContent",
+							"value": "breeze",
+							"type": "Text"
+						}
+					],
+					[
+						"item_description",
+						{
+							"__TYPE__": "StructuredTextContent",
+							"value": [
+								{
+									"type": "paragraph",
+									"content": {
+										"text": "Voluptate labore proident anim nostrud ut exercitation adipisicing ut nisi cillum labore. Laborum mollit ex dolor cupidatat elit culpa enim in non eiusmod anim veniam ad ad quis. Aliquip sunt laborum eu aliqua laborum elit in nostrud laboris et aliquip."
+									}
+								}
+							]
+						}
+					]
+				]
+			}
+		]
+	}
+]

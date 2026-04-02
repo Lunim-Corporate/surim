@@ -1,0 +1,19 @@
+{
+  "id": "business_affairs$default",
+  "primary": {
+    "title": [{ "type": "heading2", "text": "Business Affairs" }],
+    "subtitle": "Underpinned by Web3 Smart Contracts",
+    "description": [{ "type": "paragraph", "text": "Ensuring IP protection whilst enabling automated, transparent revenue distribution." }],
+    "background_image": { "dimensions": { "width": 1600, "height": 900 }, "url": "https://images.prismic.io/surim/ba-bg.jpg" }
+  },
+  "items": [
+    { "step_title": "Project Leads", "step_description": "Complete control over IP. Transparent automated revenue distribution.", "top_title": "Project Leads", "top_description": [{"type":"paragraph","text":"Complete control over IP. Transparent automated revenue distribution."}], "node_image": {"dimensions":{"width":160,"height":160},"url":"https://images.prismic.io/surim/ba-node-1.jpg"} },
+    { "step_title": "Project", "bottom_title": "Project", "bottom_description": [{"type":"paragraph","text":"Budget, timeline and contribution model are set"}], "node_image": {"dimensions":{"width":160,"height":160},"url":"https://images.prismic.io/surim/ba-node-2.jpg"} },
+    { "step_title": "Fan Participation", "top_title": "Fan Participation", "top_description": [{"type":"paragraph","text":"BTS, Alternative Reality Game, merch, NFTs"}], "node_image": {"dimensions":{"width":160,"height":160},"url":"https://images.prismic.io/surim/ba-node-3.jpg"} },
+    { "step_title": "Cast & Crew Join", "bottom_title": "Cast & Crew Join", "bottom_description": [{"type":"paragraph","text":"Pay, equity share, revenue share locked in to smart contracts"}], "node_image": {"dimensions":{"width":160,"height":160},"url":"https://images.prismic.io/surim/ba-node-4.jpg"} },
+    { "step_title": "Investor Engagement", "top_title": "Investor Engagement", "top_description": [{"type":"paragraph","text":"Live data room with budgets, schedules, comps, KPIs"}], "node_image": {"dimensions":{"width":160,"height":160},"url":"https://images.prismic.io/surim/ba-node-5.jpg"} },
+    { "step_title": "Funding Triggered", "bottom_title": "Funding Triggered", "bottom_description": [{"type":"paragraph","text":"Smart contracts lock in revenue split as soon as threshold met"}], "node_image": {"dimensions":{"width":160,"height":160},"url":"https://images.prismic.io/surim/ba-node-6.jpg"} },
+    { "step_title": "Revenue Received", "top_title": "Revenue Received", "top_description": [{"type":"paragraph","text":"Project receives revenue from sales and/or views"}], "node_image": {"dimensions":{"width":160,"height":160},"url":"https://images.prismic.io/surim/ba-node-7.jpg"} },
+    { "step_title": "Auto Payments", "bottom_title": "Auto Payments", "bottom_description": [{"type":"paragraph","text":"Lead, contributors, fans and investors all receive revenue share transparently"}], "node_image": {"dimensions":{"width":160,"height":160},"url":"https://images.prismic.io/surim/ba-node-8.jpg"} }
+  ]
+}

@@ -1,0 +1,80 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"title": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading2",
+						"content": {
+							"text": "Major"
+						}
+					}
+				]
+			},
+			"columns": {
+				"__TYPE__": "FieldContent",
+				"value": "15",
+				"type": "Number"
+			},
+			"section_id": {
+				"__TYPE__": "FieldContent",
+				"value": "stems",
+				"type": "Text"
+			}
+		},
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": [
+					[
+						"item_title",
+						{
+							"__TYPE__": "StructuredTextContent",
+							"value": [
+								{
+									"type": "heading1",
+									"content": {
+										"text": "Anybody"
+									}
+								}
+							]
+						}
+					],
+					[
+						"icon_name",
+						{
+							"__TYPE__": "FieldContent",
+							"value": "grown",
+							"type": "Text"
+						}
+					],
+					[
+						"item_description",
+						{
+							"__TYPE__": "StructuredTextContent",
+							"value": [
+								{
+									"type": "paragraph",
+									"content": {
+										"text": "Voluptate cupidatat mollit culpa laboris eu mollit mollit laboris."
+									}
+								}
+							]
+						}
+					],
+					[
+						"icon_background_color",
+						{
+							"__TYPE__": "FieldContent",
+							"value": "#ae391f",
+							"type": "Color"
+						}
+					]
+				]
+			}
+		]
+	}
+]

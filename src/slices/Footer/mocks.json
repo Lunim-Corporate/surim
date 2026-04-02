@@ -1,0 +1,103 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"company_name": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading2",
+						"content": {
+							"text": "Finally"
+						}
+					}
+				]
+			},
+			"tagline": {
+				"__TYPE__": "FieldContent",
+				"value": "blood",
+				"type": "Text"
+			},
+			"navigation_links_title": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading2",
+						"content": {
+							"text": "Sound"
+						}
+					}
+				]
+			},
+			"contact_information_title": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading2",
+						"content": {
+							"text": "Difficult"
+						}
+					}
+				]
+			},
+			"links": {
+				"__TYPE__": "GroupContentType",
+				"value": [
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"link",
+								{
+									"key": "37cda0dd-05fb-4f83-9cef-60756fbd3b83",
+									"__TYPE__": "LinkContent",
+									"value": {
+										"__TYPE__": "ExternalLink",
+										"url": "https://prismic.io",
+										"text": "hunter"
+									}
+								}
+							]
+						]
+					}
+				]
+			},
+			"company_email": {
+				"__TYPE__": "FieldContent",
+				"value": "chair",
+				"type": "Text"
+			},
+			"company_phone_number": {
+				"__TYPE__": "FieldContent",
+				"value": "label",
+				"type": "Text"
+			},
+			"company_address": {
+				"__TYPE__": "FieldContent",
+				"value": "forgot",
+				"type": "Text"
+			},
+			"copyright_text": {
+				"__TYPE__": "FieldContent",
+				"value": "everyone",
+				"type": "Text"
+			},
+			"privacy_policy": {
+				"key": "c1793d5c-3d37-4e1a-b001-6c87b54747cc",
+				"__TYPE__": "LinkContent",
+				"value": {
+					"__TYPE__": "ExternalLink",
+					"url": "http://google.com",
+					"text": "automobile"
+				}
+			},
+			"back_to_top_text": {
+				"__TYPE__": "FieldContent",
+				"value": "shoulder",
+				"type": "Text"
+			}
+		},
+		"items": []
+	}
+]

@@ -1,0 +1,26 @@
+{
+  "id": "collectibles",
+  "type": "SharedSlice",
+  "name": "Collectibles",
+  "description": "Virtual and real-world collectibles grid",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "",
+      "version": "initial",
+      "description": "Default variation",
+      "imageUrl": "",
+      "primary": {
+        "title": { "type": "StructuredText", "config": { "label": "Title", "single": "heading2", "placeholder": "Virtual and Real-World Collectibles" } },
+        "background_image": { "type": "Image", "config": { "label": "Background Image", "constraint": { "width": 1920, "height": 1080 }, "thumbnails": [] } }
+      },
+      "items": {
+        "image": { "type": "Image", "config": { "label": "Image", "constraint": { "width": 600, "height": 600 }, "thumbnails": [] } },
+        "title": { "type": "Text", "config": { "label": "Title" } },
+        "price_label": { "type": "Text", "config": { "label": "Price Label", "placeholder": "0.1733 ETH" } },
+        "cta_label": { "type": "Text", "config": { "label": "CTA Label", "placeholder": "Buy now" } }
+      }
+    }
+  ]
+}

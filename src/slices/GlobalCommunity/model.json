@@ -1,0 +1,121 @@
+{
+  "id": "global_community",
+  "type": "SharedSlice",
+  "name": "GlobalCommunity",
+  "description": "Global Community section featuring Tabb platform and talent grid",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default variation",
+      "imageUrl": "",
+      "primary": {
+        "eyebrow_text": {
+          "type": "Text",
+          "config": {
+            "label": "Eyebrow Text",
+            "placeholder": "Global Community"
+          }
+        },
+        "heading": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Heading",
+            "placeholder": "Attracting The Talent",
+            "allowTargetBlank": false,
+            "single": "heading2"
+          }
+        },
+        "body_text": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Body Text",
+            "placeholder": "Description of the global community...",
+            "allowTargetBlank": true,
+            "multi": "paragraph,strong,em,hyperlink"
+          }
+        },
+        "tabb_logo": {
+          "type": "Image",
+          "config": {
+            "label": "Tabb Logo",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "background_image": {
+          "type": "Image",
+          "config": {
+            "label": "Background Image",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "sphere_images": {
+          "type": "Group",
+          "config": {
+            "label": "Sphere Images",
+            "repeat": true,
+            "fields": {
+              "image": {
+                "type": "Image",
+                "config": {
+                  "label": "Image",
+                  "constraint": {},
+                  "thumbnails": []
+                }
+              },
+              "alt": {
+                "type": "Text",
+                "config": {
+                  "label": "Alt (optional)"
+                }
+              }
+            }
+          }
+        },
+        "sphere_auto_rotate": {
+          "type": "Boolean",
+          "config": {
+            "label": "Sphere Auto Rotate",
+            "default_value": true
+          }
+        },
+        "sphere_size": {
+          "type": "Select",
+          "config": {
+            "label": "Sphere Size",
+            "options": [
+              "small",
+              "medium",
+              "large"
+            ],
+            "default_value": "medium"
+          }
+        }
+      },
+      "items": {
+        "face_image": {
+          "type": "Image",
+          "config": {
+            "label": "Face Image",
+            "constraint": {
+              "width": 200,
+              "height": 200
+            },
+            "thumbnails": []
+          }
+        },
+        "person_name": {
+          "type": "Text",
+          "config": {
+            "label": "Person Name",
+            "placeholder": "Optional name for accessibility"
+          }
+        }
+      }
+    }
+  ]
+}

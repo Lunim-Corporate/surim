@@ -1,0 +1,40 @@
+{
+  "format": "custom",
+  "id": "ai_automation",
+  "label": "AI Automation",
+  "repeatable": false,
+  "status": true,
+  "json": {
+    "Main": {
+      "slices": {
+        "type": "Slices",
+        "fieldset": "Slice Zone",
+        "config": {
+          "choices": {
+            "compact_hero": {
+              "type": "SharedSlice"
+            },
+            "Imageandtext": {
+              "type": "SharedSlice"
+            },
+            "breadcrumbs": {
+              "type": "SharedSlice"
+            },
+            "ServiceGrid": {
+              "type": "SharedSlice"
+            },
+            "Faq": {
+              "type": "SharedSlice"
+            },
+            "Expertiseareas": {
+              "type": "SharedSlice"
+            },
+            "hero": {
+              "type": "SharedSlice"
+            }
+          }
+        }
+      }
+    }
+  }
+}

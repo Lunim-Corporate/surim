@@ -1,0 +1,144 @@
+{
+  "id": "team_page",
+  "label": "Team Page",
+  "repeatable": false,
+  "status": true,
+  "json": {
+    "Main": {
+      "body": {
+        "type": "Slices",
+        "fieldset": "Slice zone",
+        "config": {
+          "labels": {},
+          "choices": {}
+        }
+      }
+    },
+    "Team Hero": {
+      "body1": {
+        "type": "Slices",
+        "fieldset": "Slice zone",
+        "config": {
+          "labels": null,
+          "choices": {
+            "team_hero": {
+              "type": "Slice",
+              "fieldset": "team_hero",
+              "description": "Hero section for the team page",
+              "icon": "title",
+              "display": "list",
+              "non-repeat": {
+                "title": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Title",
+                    "placeholder": "Main heading for the team page"
+                  }
+                },
+                "description": {
+                  "type": "StructuredText",
+                  "config": {
+                    "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl",
+                    "label": "Description",
+                    "placeholder": "Team page description paragraph"
+                  }
+                }
+              },
+              "repeat": {}
+            }
+          }
+        }
+      }
+    },
+    "Team Members": {
+      "body2": {
+        "type": "Slices",
+        "fieldset": "Slice zone",
+        "config": {
+          "labels": null,
+          "choices": {
+            "team_members": {
+              "type": "Slice",
+              "fieldset": "team_members",
+              "description": "Repeatable section for individual team members",
+              "icon": "card_membership",
+              "display": "grid",
+              "non-repeat": {},
+              "repeat": {
+                "name": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Name",
+                    "placeholder": "Team member's full name"
+                  }
+                },
+                "role": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Role",
+                    "placeholder": "Team member's job title/position"
+                  }
+                },
+                "image": {
+                  "type": "Image",
+                  "config": {
+                    "constraint": {
+                      "width": 400,
+                      "height": 400
+                    },
+                    "thumbnails": [],
+                    "label": "Image"
+                  }
+                },
+                "bio": {
+                  "type": "StructuredText",
+                  "config": {
+                    "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl",
+                    "label": "Bio",
+                    "placeholder": "Short biography or introduction"
+                  }
+                },
+                "details": {
+                  "type": "StructuredText",
+                  "config": {
+                    "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl",
+                    "label": "Details",
+                    "placeholder": "Detailed achievements/background (separate each point with a new line)"
+                  }
+                },
+                "linkedin_url": {
+                  "type": "Link",
+                  "config": {
+                    "allowTargetBlank": true,
+                    "label": "LinkedIn URL",
+                    "placeholder": "LinkedIn profile URL (optional)",
+                    "select": null
+                  }
+                },
+                "twitter_url": {
+                  "type": "Link",
+                  "config": {
+                    "allowTargetBlank": true,
+                    "label": "Twitter URL",
+                    "placeholder": "Twitter profile URL (optional)",
+                    "select": null
+                  }
+                },
+                "github_url": {
+                  "type": "Link",
+                  "config": {
+                    "allowTargetBlank": true,
+                    "label": "GitHub URL",
+                    "placeholder": "GitHub profile URL (optional)",
+                    "select": null
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "format": "custom"
+}

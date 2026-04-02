@@ -1,0 +1,74 @@
+{
+  "id": "case_study",
+  "label": "Case Study",
+  "repeatable": true,
+  "status": true,
+  "format": "custom",
+  "json": {
+    "Main": {
+      "uid": {
+        "type": "UID",
+        "config": {
+          "label": "uid"
+        }
+      },
+      "hero_image": {
+        "type": "Image",
+        "config": {
+          "constraint": {},
+          "thumbnails": [],
+          "label": "hero_image"
+        }
+      },
+      "hero_title": {
+        "type": "StructuredText",
+        "config": {
+          "multi": "heading1,heading2,heading3,heading4,heading5,heading6,strong,em",
+          "label": "hero_title"
+        }
+      },
+      "challenge_title": {
+        "type": "StructuredText",
+        "config": {
+          "multi": "heading1,heading2,heading3,heading4,heading5,heading6,strong,em",
+          "label": "challenge_title"
+        }
+      },
+      "challenge_content": {
+        "type": "StructuredText",
+        "config": {
+          "multi": "paragraph,strong,em,list-item,o-list-item",
+          "label": "challenge_content"
+        }
+      },
+      "solution_title": {
+        "type": "StructuredText",
+        "config": {
+          "single": "heading1,heading2,heading3,heading4,heading5,heading6,strong,em",
+          "label": "solution_title"
+        }
+      },
+      "solution_content": {
+        "type": "StructuredText",
+        "config": {
+          "multi": "paragraph,strong,em,embed,list-item,o-list-item,rtl",
+          "label": "solution_content"
+        }
+      },
+      "impact_title": {
+        "type": "StructuredText",
+        "config": {
+          "single": "heading1,heading2,heading3,heading4,heading5,heading6,strong,em",
+          "label": "impact_title"
+        }
+      },
+      "impact_content": {
+        "type": "StructuredText",
+        "config": {
+          "multi": "paragraph,strong,em,list-item,o-list-item",
+          "label": "impact_content"
+        }
+      }
+    }
+  }
+}

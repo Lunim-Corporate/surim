@@ -3,7 +3,7 @@ import type { Content } from "@prismicio/client";
 import type { LinkField } from "@prismicio/types";
 import { createClient } from "@/prismicio";
 
-export type SiteKey = "main";
+export type SiteKey = "main" | "ai" | "ux" | "video";
 
 export type ChildLink = {
   label: string;
@@ -42,6 +42,32 @@ export const SITE_CONFIG: Record<
       "Surim.io creates seamless digital experiences with cutting-edge technology and design.",
     baseUrl: process.env.NEXT_PUBLIC_WEBSITE_URL || "https://surim.io",
     homePath: "/",
+  },
+  ai: {
+    siteName: "Surim AI Automation",
+    title: "Surim AI Automation",
+    description:
+      "Transform your business with AI automation solutions from Surim.",
+    baseUrl: "https://ai.surim.io",
+    homePath: "/ai-automation",
+    domain: "ai-automation",
+  },
+  ux: {
+    siteName: "Surim UX",
+    title: "Surim UX",
+    description: "Design better product experiences with Surim UX.",
+    baseUrl: "https://ux.surim.io",
+    homePath: "/ux",
+    domain: "ux",
+  },
+  video: {
+    siteName: "Surim Video Production",
+    title: "Surim Video Production",
+    description:
+      "Create compelling visual stories with professional video production from Surim.",
+    baseUrl: "https://video-next.surim.io",
+    homePath: "/video",
+    domain: "video",
   },
 };
 
@@ -91,6 +117,17 @@ export const getMainLayoutContent = cache(async (): Promise<LayoutContent> => {
   return extractLayoutContent(primaryNav, footer);
 });
 
+export const getAiLayoutContent = cache(async (): Promise<LayoutContent> => {
+  return getGenericSiteLayoutContent("ai-automation");
+});
+
+export const getUxLayoutContent = cache(async (): Promise<LayoutContent> => {
+  return getGenericSiteLayoutContent("ux");
+});
+
+export const getVideoLayoutContent = cache(async (): Promise<LayoutContent> => {
+  return getGenericSiteLayoutContent("video");
+});
 
 function isUsableLink(link: LinkField | null | undefined): link is LinkField {
   return !!link && link.link_type !== "Any";
@@ -228,6 +265,12 @@ async function getBreadcrumbDataForSite(siteKey: SiteKey): Promise<BreadcrumbDat
 }
 
 export const getAllBreadcrumbData = cache(async () => {
-  const main = await getBreadcrumbDataForSite("main");
-  return { main };
+  const [main, ai, ux, video] = await Promise.all([
+    getBreadcrumbDataForSite("main"),
+    getBreadcrumbDataForSite("ai"),
+    getBreadcrumbDataForSite("ux"),
+    getBreadcrumbDataForSite("video"),
+  ]);
+
+  return { main, ai, ux, video };
 });

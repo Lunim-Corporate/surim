@@ -1,0 +1,155 @@
+[
+  {
+    "__TYPE__": "SharedSliceContent",
+    "variation": "default",
+    "primary": {
+      "section_title": [
+        {
+          "type": "heading2",
+          "text": "Virtual Team",
+          "spans": []
+        }
+      ],
+      "subtitle": "Building The Foundation",
+      "description": [
+        {
+          "type": "paragraph",
+          "text": "Virtual teams deliver a complete production in virtual form before shooting in the real world.",
+          "spans": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Creative freedom, real-time iteration. Major savings as everything is planned and known before shooting begins. Builds the foundation for multiple complementary transmedia channels.",
+          "spans": [
+            {
+              "start": 0,
+              "end": 17,
+              "type": "strong"
+            },
+            {
+              "start": 19,
+              "end": 41,
+              "type": "strong"
+            }
+          ]
+        }
+      ],
+      "center_label": "Virtual Team",
+      "background_pattern": "particles"
+    },
+    "items": [
+      {
+        "team_photo": {
+          "dimensions": {
+            "width": 300,
+            "height": 300
+          },
+          "alt": "Director",
+          "copyright": null,
+          "url": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=300&h=300&fit=crop"
+        },
+        "primary_role": "Director",
+        "secondary_role": "Possibly IRL Also",
+        "position": "top-left"
+      },
+      {
+        "team_photo": {
+          "dimensions": {
+            "width": 300,
+            "height": 300
+          },
+          "alt": "Virtual Producer",
+          "copyright": null,
+          "url": "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=300&h=300&fit=crop"
+        },
+        "primary_role": "Virtual Producer",
+        "secondary_role": "Team Lead",
+        "position": "top-center"
+      },
+      {
+        "team_photo": {
+          "dimensions": {
+            "width": 300,
+            "height": 300
+          },
+          "alt": "Screenwriter",
+          "copyright": null,
+          "url": "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=300&h=300&fit=crop"
+        },
+        "primary_role": "Screenwriter",
+        "secondary_role": "Narrative Designer",
+        "position": "top-right"
+      },
+      {
+        "team_photo": {
+          "dimensions": {
+            "width": 300,
+            "height": 300
+          },
+          "alt": "Character Designer",
+          "copyright": null,
+          "url": "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=300&h=300&fit=crop"
+        },
+        "primary_role": "Character Designer",
+        "secondary_role": "Animator",
+        "position": "left"
+      },
+      {
+        "team_photo": {
+          "dimensions": {
+            "width": 300,
+            "height": 300
+          },
+          "alt": "Cinematographer",
+          "copyright": null,
+          "url": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=300&h=300&fit=crop"
+        },
+        "primary_role": "Cinematographer",
+        "secondary_role": "Previs Artist",
+        "position": "right"
+      },
+      {
+        "team_photo": {
+          "dimensions": {
+            "width": 300,
+            "height": 300
+          },
+          "alt": "Art Director",
+          "copyright": null,
+          "url": "https://images.unsplash.com/photo-1594744803329-e58b31de8bf5?w=300&h=300&fit=crop"
+        },
+        "primary_role": "Art Director",
+        "secondary_role": "World Builder",
+        "position": "bottom-left"
+      },
+      {
+        "team_photo": {
+          "dimensions": {
+            "width": 300,
+            "height": 300
+          },
+          "alt": "Technical Artist",
+          "copyright": null,
+          "url": "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=300&h=300&fit=crop"
+        },
+        "primary_role": "Technical Artist",
+        "secondary_role": "Pipeline TD",
+        "position": "bottom-center"
+      },
+      {
+        "team_photo": {
+          "dimensions": {
+            "width": 300,
+            "height": 300
+          },
+          "alt": "Sound Designer",
+          "copyright": null,
+          "url": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=300&fit=crop"
+        },
+        "primary_role": "Sound Designer",
+        "secondary_role": "Composer",
+        "position": "bottom-right"
+      }
+    ]
+  }
+]

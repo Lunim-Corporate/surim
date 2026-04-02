@@ -1,0 +1,70 @@
+{
+  "id": "transmedia_hero",
+  "type": "SharedSlice",
+  "name": "TransmediaHero",
+  "description": "Full-screen hero section for Transmedia Playbook with logo, title, and cinematic background",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default variation",
+      "imageUrl": "",
+      "primary": {
+        "logo": {
+          "type": "Image",
+          "config": {
+            "label": "Logo",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "main_title": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Main Title",
+            "placeholder": "TRANSMEDIA PLAYBOOK",
+            "allowTargetBlank": false,
+            "single": "heading1"
+          }
+        },
+        "subtitle": {
+          "type": "Text",
+          "config": {
+            "label": "Subtitle",
+            "placeholder": "Reinventing how stories are experienced and funded"
+          }
+        },
+        "tagline": {
+          "type": "Text",
+          "config": {
+            "label": "Tagline",
+            "placeholder": "Virtual-First, AI-First, Human-Centred"
+          }
+        },
+        "background_image": {
+          "type": "Image",
+          "config": {
+            "label": "Background Image",
+            "constraint": {
+              "width": 1920,
+              "height": 1080
+            },
+            "thumbnails": []
+          }
+        },
+        "enable_parallax": {
+          "type": "Boolean",
+          "config": {
+            "label": "Enable Parallax Effect",
+            "default_value": true,
+            "placeholder_true": "Enabled",
+            "placeholder_false": "Disabled"
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}

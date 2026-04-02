@@ -1,0 +1,133 @@
+{
+  "id": "virtual_team_circle",
+  "type": "SharedSlice",
+  "name": "VirtualTeamCircle",
+  "description": "Virtual Team circular diagram showing roles connected to center with animated lines",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default variation",
+      "imageUrl": "",
+      "primary": {
+        "section_title": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Section Title",
+            "placeholder": "Virtual Team",
+            "allowTargetBlank": false,
+            "single": "heading2"
+          }
+        },
+        "subtitle": {
+          "type": "Text",
+          "config": {
+            "label": "Subtitle",
+            "placeholder": "Building The Foundation"
+          }
+        },
+        "description": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Description",
+            "placeholder": "Virtual teams deliver a complete production...",
+            "allowTargetBlank": true,
+            "multi": "paragraph,strong,em"
+          }
+        },
+        "bullets": {
+          "type": "Group",
+          "config": {
+            "label": "Key Points",
+            "repeat": true,
+            "fields": {
+              "item": { "type": "Text", "config": { "label": "Bullet" } }
+            }
+          }
+        },
+        "center_label": {
+          "type": "Text",
+          "config": {
+            "label": "Center Circle Label",
+            "placeholder": "Virtual Team"
+          }
+        },
+        "center_image": {
+          "type": "Image",
+          "config": {
+            "label": "Center Circle Image",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "background_pattern": {
+          "type": "Select",
+          "config": {
+            "label": "Background Pattern",
+            "placeholder": "Select pattern",
+            "options": [
+              "particles",
+              "gradient",
+              "solid"
+            ],
+            "default_value": "particles"
+          }
+        },
+        "background_image": {
+          "type": "Image",
+          "config": {
+            "label": "Background Image",
+            "constraint": {},
+            "thumbnails": []
+          }
+        }
+      },
+      "items": {
+        "team_photo": {
+          "type": "Image",
+          "config": {
+            "label": "Team Member Photo",
+            "constraint": {
+              "width": 300,
+              "height": 300
+            },
+            "thumbnails": []
+          }
+        },
+        "primary_role": {
+          "type": "Text",
+          "config": {
+            "label": "Primary Role",
+            "placeholder": "e.g., Director"
+          }
+        },
+        "secondary_role": {
+          "type": "Text",
+          "config": {
+            "label": "Secondary Role",
+            "placeholder": "e.g., Possibly IRL Also"
+          }
+        },
+        "position": {
+          "type": "Select",
+          "config": {
+            "label": "Position on Circle",
+            "placeholder": "Select position",
+            "options": [
+              "top-left",
+              "top-center",
+              "top-right",
+              "right",
+              "bottom-right",
+              "bottom-center",
+              "bottom-left",
+              "left"
+            ]
+          }
+        }
+      }
+    }
+  ]
+}

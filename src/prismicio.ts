@@ -96,28 +96,26 @@ export const linkResolver: LinkResolverFunction = (link) => {
  * {@link https://prismic.io/docs/route-resolver#route-resolver}
  */
 // TODO: Update the routes array to match your project's route structure.
-// Routes are commented out until custom types are pushed to the Prismic repo via `npm run slicemachine`
-// const routes: Route[] = [
-//   { type: "homepage", path: "/" },
-//   { type: "our_team_page", path: "/our-team" },
-//   { type: "tech", path: "/digital" },
-//   { type: "academy", path: "/academy" },
-//   { type: "academy_course", path: "/academy/:uid" },
-//   { type: "film", path: "/media" },
-//   { type: "media_temp", path: "/media-temp" },
-//   { type: "tabb", path: "/tabb" },
-//   { type: "privacy_policy_sm", path: "/privacy-policy" },
-//   { type: "blog_home_page", path: "/blog" },
-//   { type: "blog_post", path: "/blog/:uid" },
-//   { type: "author", path: "/blog/authors/:uid" },
-//   { type: "ai_automation", path: "/ai-automation" },
-//   { type: "ai_automation_page", path: "/ai-automation/:uid" },
-//   { type: "video", path: "/video" },
-//   { type: "video_page", path: "/video/:uid" },
-//   { type: "ux", path: "/ux" },
-//   { type: "ux_page", path: "/ux/:uid" },
-// ];
-const routes: Route[] = [];
+const routes: Route[] = [
+  { type: "homepage", path: "/" },
+  { type: "our_team_page", path: "/our-team" },
+  { type: "tech", path: "/digital" },
+  { type: "academy", path: "/academy" },
+  { type: "academy_course", path: "/academy/:uid" },
+  { type: "film", path: "/media" },
+  { type: "media_temp", path: "/media-temp" },
+  { type: "tabb", path: "/tabb" },
+  { type: "privacy_policy_sm", path: "/privacy-policy" },
+  { type: "blog_home_page", path: "/blog" },
+  { type: "blog_post", path: "/blog/:uid" },
+  { type: "author", path: "/blog/authors/:uid" },
+  { type: "ai_automation", path: "/ai-automation" },
+  { type: "ai_automation_page", path: "/ai-automation/:uid" },
+  { type: "video", path: "/video" },
+  { type: "video_page", path: "/video/:uid" },
+  { type: "ux", path: "/ux" },
+  { type: "ux_page", path: "/ux/:uid" },
+];
 
 /**
  * Creates a Prismic client for the project's repository. The client is used to

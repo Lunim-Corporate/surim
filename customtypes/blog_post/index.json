@@ -18,7 +18,7 @@
           "label": "Category",
           "placeholder": "",
           "allowTargetBlank": true,
-          "multi": "strong,em,hyperlink"
+          "multi": "paragraph,strong,em,hyperlink"
         }
       },
       "publication_date": {

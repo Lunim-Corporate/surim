@@ -20,7 +20,7 @@
             "label": "title",
             "placeholder": "",
             "allowTargetBlank": true,
-            "single": "heading2,heading3,heading4,heading5,heading6,strong,em"
+            "single": "heading1,heading2,heading3,heading4,heading5,heading6,strong,em"
           }
         },
         "columns": {

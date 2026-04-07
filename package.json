@@ -8,7 +8,10 @@
     "start": "next start",
     "lint": "eslint",
     "slicemachine": "start-slicemachine",
-    "codegen": "npx @prismicio/codegen"
+    "codegen": "npx @prismicio/codegen",
+    "prismic:duplicate-lunim": "node scripts/duplicate-prismic-from-lunim.mjs",
+    "prismic:push-models": "node scripts/push-prismic-models.mjs",
+    "prismic:preflight-lunim": "node scripts/preflight-prismic-migration.mjs"
   },
   "dependencies": {
     "@fontsource/inter": "^5.2.8",

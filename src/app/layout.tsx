@@ -21,6 +21,10 @@ export default async function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
+        <Script
+          src="https://static.cdn.prismic.io/prismic.js?new=true&repo=surim"
+          strategy="afterInteractive"
+        />
         {GA_ID ? (
           <>
             <Script

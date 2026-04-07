@@ -22,9 +22,13 @@ export const generateMetaDataInfo = (
 
   // Helpers
   const getSiteUrl = () => {
-    return process.env.NODE_ENV === "production"
-      ? process.env.NEXT_PUBLIC_WEBSITE_URL
-      : "http://localhost:3000";
+    if (process.env.NODE_ENV !== "production") return "http://localhost:3000";
+
+    return (
+      process.env.NEXT_PUBLIC_WEBSITE_URL ||
+      process.env.URL ||
+      "https://surim.io"
+    );
   };
 
   const getImageAlt = () => {

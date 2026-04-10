@@ -7,7 +7,7 @@ import { ChevronRight } from "lucide-react";
 import { asLink } from "@prismicio/helpers";
 import type { LinkField } from "@prismicio/client";
 import { JsonLd } from "@/components/JsonLd";
-import { SITE_CONFIG, type SiteKey } from "@/lib/siteContent";
+import { SITE_CONFIG } from "@/lib/siteContent";
 import type { BreadcrumbList, ListItem, WithContext } from "schema-dts";
 
 type ChildLink = {
@@ -23,23 +23,17 @@ type Section = {
 };
 
 type BreadcrumbsClientProps = {
-  siteData: Record<
-    SiteKey,
-    {
+  siteData: {
+    main: {
       sections: Section[];
       hiddenSegments: string[];
-    }
-  >;
+    };
+  };
 };
 
 const DEFAULT_SITE_URL = "https://surim.io";
 const SITE_URL =
   process.env.NEXT_PUBLIC_SITE_URL?.replace(/\/+$/, "") || DEFAULT_SITE_URL;
-const INTERNAL_PREFIX_BY_SITE: Partial<Record<SiteKey, string>> = {
-  ai: "/ai-automation",
-  ux: "/ux",
-  video: "/video",
-};
 
 const resolveLinkField = (link: LinkField | null | undefined): string | null => {
   if (!link) return null;
@@ -61,7 +55,6 @@ const normalizePath = (value: string | null): string | null => {
   return value.replace(/\/+$/, "");
 };
 
-// Optional nice labels for known segments
 const SEGMENT_LABEL_OVERRIDES: Record<string, string> = {
   digital: "Digital",
   ai: "AI",
@@ -71,7 +64,6 @@ const SEGMENT_LABEL_OVERRIDES: Record<string, string> = {
   web3: "Web3",
   tabb: "Community",
 };
-// Add more slug-based overrides here if needed, e.g. "ai-whatsapp-interactor": "AI Whatsapp Interactor",
 
 const labelFromSegment = (segment: string): string => {
   const decoded = decodeURIComponent(segment);
@@ -85,160 +77,60 @@ const labelFromSegment = (segment: string): string => {
     .join(" ");
 };
 
-export default function BreadcrumbsClient({
-  siteData,
-}: BreadcrumbsClientProps) {
+export default function BreadcrumbsClient({ siteData }: BreadcrumbsClientProps) {
   const pathname = usePathname();
   const currentPath = normalizePath(pathname) ?? "/";
-  const hostInfo = useMemo(() => {
-    if (typeof window === "undefined") {
-      return {
-        hostname: "",
-        siteKey: null as SiteKey | null,
-      };
-    }
 
-    const hostname = window.location.hostname;
-    const subdomain = hostname.split(".")[0];
-
-    if (subdomain === "ai" && !hostname.startsWith("www")) {
-      return { hostname, siteKey: "ai" as SiteKey };
-    }
-    if (subdomain === "ux" && !hostname.startsWith("www")) {
-      return { hostname, siteKey: "ux" as SiteKey };
-    }
-    if (subdomain === "video-next" && !hostname.startsWith("www")) {
-      return { hostname, siteKey: "video" as SiteKey };
-    }
-
-    return { hostname, siteKey: null };
-  }, []);
+  const { sections, hiddenSegments } = siteData.main;
 
   const segments = useMemo(() => {
-    if (currentPath === "/") {
-      return [];
-    }
+    if (currentPath === "/") return [];
     return currentPath.split("/").filter(Boolean);
   }, [currentPath]);
-
-  const resolvedSiteKey = useMemo<SiteKey>(() => {
-    if (hostInfo.siteKey) {
-      return hostInfo.siteKey;
-    }
-
-    if (currentPath === "/ai-automation" || currentPath.startsWith("/ai-automation/")) {
-      return "ai";
-    }
-    if (currentPath === "/ux" || currentPath.startsWith("/ux/")) {
-      return "ux";
-    }
-    if (currentPath === "/video" || currentPath.startsWith("/video/")) {
-      return "video";
-    }
-
-    return "main";
-  }, [currentPath, hostInfo.siteKey]);
-
-  const { sections, hiddenSegments } = siteData[resolvedSiteKey];
-  const isSubdomainHost = hostInfo.siteKey === resolvedSiteKey && resolvedSiteKey !== "main";
-  const internalPrefix = INTERNAL_PREFIX_BY_SITE[resolvedSiteKey] ?? "";
-
-  const toPublicPath = useMemo(
-    () => (path: string | null): string | null => {
-      if (!path) return null;
-      if (!isSubdomainHost || !internalPrefix) return path;
-      if (path === internalPrefix) return "/";
-      if (path.startsWith(`${internalPrefix}/`)) {
-        return path.slice(internalPrefix.length) || "/";
-      }
-      return path;
-    },
-    [internalPrefix, isSubdomainHost]
-  );
 
   const hiddenSet = useMemo(
     () => new Set((hiddenSegments ?? []).map((s) => s.toLowerCase())),
     [hiddenSegments]
   );
 
-  const showBreadcrumbs = segments.length >= 1;
-
-  // Determine home path and label based on site context
-  const homeConfig = useMemo(() => {
-    if (resolvedSiteKey === "ai") {
-      return { href: isSubdomainHost ? "/" : "/ai-automation", label: "Home" };
-    }
-    if (resolvedSiteKey === "ux") {
-      return { href: isSubdomainHost ? "/" : "/ux", label: "Home" };
-    }
-    if (resolvedSiteKey === "video") {
-      return { href: isSubdomainHost ? "/" : "/video", label: "Home" };
-    }
-    return { href: "/", label: "Home" };
-  }, [isSubdomainHost, resolvedSiteKey]);
-
-  // Build a path -> label map from navigation
   const pathLabelMap = useMemo(() => {
     const map = new Map<string, string>();
-
     sections.forEach((section) => {
-      const sectionPath = normalizePath(
-        toPublicPath(resolveLinkField(section.link))
-      );
-      if (sectionPath) {
-        map.set(sectionPath, section.label);
-      }
+      const sectionPath = normalizePath(resolveLinkField(section.link));
+      if (sectionPath) map.set(sectionPath, section.label);
 
       section.children.forEach((child) => {
-        const childPath = normalizePath(
-          toPublicPath(resolveLinkField(child.link))
-        );
-        if (childPath) {
-          map.set(childPath, child.label);
-        }
+        const childPath = normalizePath(resolveLinkField(child.link));
+        if (childPath) map.set(childPath, child.label);
       });
     });
-
     return map;
-  }, [sections, toPublicPath]);
+  }, [sections]);
 
   const crumbs = useMemo(() => {
     const items: { href: string; label: string }[] = [];
-
-    // Home
     items.push({ href: "/", label: "Home" });
 
     let acc = "";
     segments.forEach((seg) => {
       acc += `/${seg}`;
-      const href = acc;
+      if (hiddenSet.has(seg.toLowerCase())) return;
 
-      const segLower = seg.toLowerCase();
+      const label =
+        SEGMENT_LABEL_OVERRIDES[seg.toLowerCase()] ??
+        pathLabelMap.get(acc) ??
+        labelFromSegment(seg);
 
-      // Skip routing-only segments that should not appear as separate crumbs.
-      if (hiddenSet.has(segLower)) {
-        return;
-      }
-
-      const overrideLabel = SEGMENT_LABEL_OVERRIDES[segLower];
-      const navLabel = pathLabelMap.get(href);
-      const baseLabel = labelFromSegment(seg);
-      const label = overrideLabel ?? navLabel ?? baseLabel;
-
-      items.push({ href, label });
+      items.push({ href: acc, label });
     });
 
     return items;
   }, [segments, pathLabelMap, hiddenSet]);
 
   const breadcrumbJsonLd = useMemo<WithContext<BreadcrumbList>>(() => {
-    const siteBaseUrl = SITE_CONFIG[resolvedSiteKey].baseUrl || SITE_URL;
-    const toAbsoluteUrl = (path: string): string => {
-      if (!path || path === "/") {
-        return siteBaseUrl;
-      }
-      return `${siteBaseUrl}${path.startsWith("/") ? path : `/${path}`}`;
-    };
+    const baseUrl = SITE_CONFIG.main.baseUrl || SITE_URL;
+    const toAbsoluteUrl = (path: string) =>
+      path === "/" ? baseUrl : `${baseUrl}${path.startsWith("/") ? path : `/${path}`}`;
 
     const itemListElement: ListItem[] = crumbs.map((crumb, index) => ({
       "@type": "ListItem",
@@ -252,11 +144,9 @@ export default function BreadcrumbsClient({
       "@type": "BreadcrumbList",
       itemListElement,
     };
-  }, [crumbs, resolvedSiteKey]);
+  }, [crumbs]);
 
-  if (!showBreadcrumbs) {
-    return null;
-  }
+  if (segments.length < 1) return null;
 
   const lastIndex = crumbs.length - 1;
 

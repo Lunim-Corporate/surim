@@ -3,7 +3,7 @@ import type { Content } from "@prismicio/client";
 import type { LinkField } from "@prismicio/client";
 import { createClient } from "@/prismicio";
 
-export type SiteKey = "main" | "ai" | "ux" | "video";
+export type SiteKey = "main";
 
 export type ChildLink = {
   label: string;
@@ -32,7 +32,6 @@ export const SITE_CONFIG: Record<
     description: string;
     baseUrl: string;
     homePath: string;
-    domain?: string;
   }
 > = {
   main: {
@@ -42,32 +41,6 @@ export const SITE_CONFIG: Record<
       "Surim.io creates seamless digital experiences with cutting-edge technology and design.",
     baseUrl: process.env.NEXT_PUBLIC_WEBSITE_URL || "https://surim.io",
     homePath: "/",
-  },
-  ai: {
-    siteName: "Surim AI Automation",
-    title: "Surim AI Automation",
-    description:
-      "Transform your business with AI automation solutions from Surim.",
-    baseUrl: "https://ai.surim.io",
-    homePath: "/ai-automation",
-    domain: "ai-automation",
-  },
-  ux: {
-    siteName: "Surim UX",
-    title: "Surim UX",
-    description: "Design better product experiences with Surim UX.",
-    baseUrl: "https://ux.surim.io",
-    homePath: "/ux",
-    domain: "ux",
-  },
-  video: {
-    siteName: "Surim Video Production",
-    title: "Surim Video Production",
-    description:
-      "Create compelling visual stories with professional video production from Surim.",
-    baseUrl: "https://video-next.surim.io",
-    homePath: "/video",
-    domain: "video",
   },
 };
 
@@ -92,21 +65,6 @@ function extractLayoutContent(navDoc: any, footerDoc: any): LayoutContent {
   };
 }
 
-async function getGenericSiteLayoutContent(domainValue: string) {
-  const client = createClient();
-  const [navDocs, footerDocs] = await Promise.all([
-    (client as any).getAllByType("primary_navigation_generic").catch(() => []),
-    (client as any).getAllByType("footer_generic").catch(() => []),
-  ]);
-
-  const navDoc = navDocs.find((doc: any) => doc.data?.domain === domainValue);
-  const footerDoc = footerDocs.find(
-    (doc: any) => doc.data?.domain === domainValue,
-  );
-
-  return extractLayoutContent(navDoc, footerDoc);
-}
-
 export const getMainLayoutContent = cache(async (): Promise<LayoutContent> => {
   const client = createClient();
   const [primaryNav, footer] = await Promise.all([
@@ -115,18 +73,6 @@ export const getMainLayoutContent = cache(async (): Promise<LayoutContent> => {
   ]);
 
   return extractLayoutContent(primaryNav, footer);
-});
-
-export const getAiLayoutContent = cache(async (): Promise<LayoutContent> => {
-  return getGenericSiteLayoutContent("ai-automation");
-});
-
-export const getUxLayoutContent = cache(async (): Promise<LayoutContent> => {
-  return getGenericSiteLayoutContent("ux");
-});
-
-export const getVideoLayoutContent = cache(async (): Promise<LayoutContent> => {
-  return getGenericSiteLayoutContent("video");
 });
 
 function isUsableLink(link: LinkField | null | undefined): link is LinkField {
@@ -146,7 +92,7 @@ function getNavSectionIds(navDoc: any): string[] {
     ? navigationMenu.primary.sections
     : [];
 
-  const ids = sectionsGroup
+  return sectionsGroup
     .map((row: any) => row.section_ref)
     .map((ref: any) =>
       ref && ref.link_type === "Document" && typeof ref.id === "string"
@@ -154,8 +100,6 @@ function getNavSectionIds(navDoc: any): string[] {
         : null,
     )
     .filter((id: any): id is string => !!id);
-
-  return ids;
 }
 
 async function resolveSectionsForNavDoc(navDoc: any): Promise<Section[]> {
@@ -209,12 +153,7 @@ async function resolveSectionsForNavDoc(navDoc: any): Promise<Section[]> {
   }
 }
 
-type BreadcrumbData = {
-  sections: Section[];
-  hiddenSegments: string[];
-};
-
-async function getBreadcrumbSettings() {
+async function getBreadcrumbSettings(): Promise<string[]> {
   const client = createClient();
   const breadcrumbSettings = (await (client as any)
     .getSingle("breadcrumb_settings")
@@ -229,48 +168,14 @@ async function getBreadcrumbSettings() {
   );
 }
 
-async function getNavDocForSite(siteKey: SiteKey) {
+export const getAllBreadcrumbData = cache(async () => {
   const client = createClient();
-
-  if (siteKey === "main") {
-    return (client as any).getSingle("primary_navigation").catch(() => null);
-  }
-
-  const domainValue = SITE_CONFIG[siteKey].domain;
-  const navDocs = await (client as any)
-    .getAllByType("primary_navigation_generic")
-    .catch(() => []);
-
-  return navDocs.find((doc: any) => doc.data?.domain === domainValue) ?? null;
-}
-
-async function getBreadcrumbDataForSite(siteKey: SiteKey): Promise<BreadcrumbData> {
   const [navDoc, hiddenSegments] = await Promise.all([
-    getNavDocForSite(siteKey),
+    (client as any).getSingle("primary_navigation").catch(() => null),
     getBreadcrumbSettings(),
   ]);
 
   const sections = await resolveSectionsForNavDoc(navDoc);
-  const finalHiddenSegments = [...hiddenSegments];
-  const routingPrefix = SITE_CONFIG[siteKey].domain;
 
-  if (routingPrefix && !finalHiddenSegments.includes(routingPrefix)) {
-    finalHiddenSegments.push(routingPrefix);
-  }
-
-  return {
-    sections,
-    hiddenSegments: finalHiddenSegments,
-  };
-}
-
-export const getAllBreadcrumbData = cache(async () => {
-  const [main, ai, ux, video] = await Promise.all([
-    getBreadcrumbDataForSite("main"),
-    getBreadcrumbDataForSite("ai"),
-    getBreadcrumbDataForSite("ux"),
-    getBreadcrumbDataForSite("video"),
-  ]);
-
-  return { main, ai, ux, video };
+  return { main: { sections, hiddenSegments } };
 });

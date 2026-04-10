@@ -1,0 +1,58 @@
+/* Brand Color Tokens */
+:root {
+  --text-title: #ffffff;
+  --text-body: #d1d1d1;
+
+  --primary: #4ef2ff;       /* light cyan */
+  --secondary: #8b8bff;     /* purplish */
+  --tertiary: #ffb86c;      /* warm accent */
+
+  --bg-dark: #0a0a0a;       /* near black */
+  --bg-mid: #1a1a1a;        /* dark grey */
+  --bg-shade: #0f1a2b;      /* dark blue */
+}
+
+/* Utility Classes (optional and helpful) */
+.text-title {
+  color: var(--text-title);
+}
+
+.text-body {
+  color: var(--text-body);
+}
+
+.bg-dark {
+  background-color: var(--bg-dark);
+}
+
+.bg-mid {
+  background-color: var(--bg-mid);
+}
+
+.bg-shade {
+  background-color: var(--bg-shade);
+}
+
+.bg-primary {
+  background-color: var(--primary);
+}
+
+.bg-secondary {
+  background-color: var(--secondary);
+}
+
+.bg-tertiary {
+  background-color: var(--tertiary);
+}
+
+.text-primary {
+  color: var(--primary);
+}
+
+.text-secondary {
+  color: var(--secondary);
+}
+
+.text-tertiary {
+  color: var(--tertiary);
+}

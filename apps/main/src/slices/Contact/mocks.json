@@ -1,0 +1,177 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"main_title": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading2",
+						"content": {
+							"text": "Breakfast"
+						}
+					}
+				]
+			},
+			"subtitle": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Occaecat anim ad sit minim enim quis reprehenderit. Ut non deserunt qui consequat aute. Ipsum incididunt in veniam deserunt eu duis."
+						}
+					}
+				]
+			},
+			"contact_us_title": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Do reprehenderit pariatur sunt laboris fugiat. Cillum nostrud sint enim est commodo incididunt. Esse est deserunt excepteur anim occaecat aliqua fugiat exercitation officia dolore reprehenderit fugiat nulla labore ad."
+						}
+					}
+				]
+			},
+			"office_hours_title": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading2",
+						"content": {
+							"text": "Member"
+						}
+					}
+				]
+			},
+			"form_title": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading2",
+						"content": {
+							"text": "Express"
+						}
+					}
+				]
+			},
+			"contact_info": {
+				"__TYPE__": "GroupContentType",
+				"value": [
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"icon_name",
+								{
+									"__TYPE__": "FieldContent",
+									"value": "prevent",
+									"type": "Text"
+								}
+							],
+							[
+								"title",
+								{
+									"__TYPE__": "FieldContent",
+									"value": "bound",
+									"type": "Text"
+								}
+							],
+							[
+								"description",
+								{
+									"__TYPE__": "FieldContent",
+									"value": "syllable",
+									"type": "Text"
+								}
+							]
+						]
+					}
+				]
+			},
+			"office_info": {
+				"__TYPE__": "GroupContentType",
+				"value": [
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"days",
+								{
+									"__TYPE__": "FieldContent",
+									"value": "airplane",
+									"type": "Text"
+								}
+							],
+							[
+								"hours",
+								{
+									"__TYPE__": "FieldContent",
+									"value": "dry",
+									"type": "Text"
+								}
+							],
+							[
+								"is_closed",
+								{
+									"__TYPE__": "BooleanContent",
+									"value": true
+								}
+							]
+						]
+					}
+				]
+			},
+			"full_name_field_label": {
+				"__TYPE__": "FieldContent",
+				"value": "vote",
+				"type": "Text"
+			},
+			"email_field_label": {
+				"__TYPE__": "FieldContent",
+				"value": "cat",
+				"type": "Text"
+			},
+			"company_field_label": {
+				"__TYPE__": "FieldContent",
+				"value": "blue",
+				"type": "Text"
+			},
+			"project_budget_label": {
+				"__TYPE__": "FieldContent",
+				"value": "consist",
+				"type": "Text"
+			},
+			"project_goals_label": {
+				"__TYPE__": "FieldContent",
+				"value": "moving",
+				"type": "Text"
+			},
+			"button_label": {
+				"__TYPE__": "FieldContent",
+				"value": "egg",
+				"type": "Text"
+			},
+			"budget_options": {
+				"__TYPE__": "FieldContent",
+				"value": "Estimated Budget",
+				"type": "Select"
+			},
+			"contact_us_subtitle": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Ad quis ipsum mollit cillum reprehenderit et anim excepteur labore est do exercitation ut. Commodo aliqua deserunt cupidatat ullamco voluptate sunt ad mollit occaecat et."
+						}
+					}
+				]
+			}
+		},
+		"items": []
+	}
+]

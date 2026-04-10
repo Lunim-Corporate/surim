@@ -1,0 +1,70 @@
+{
+  "id": "ServiceGrid",
+  "type": "SharedSlice",
+  "name": "ServiceGrid",
+  "legacyPaths": {
+    "homepage::body::service_grid": "default"
+  },
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "description": "Default",
+      "imageUrl": "",
+      "docURL": "",
+      "version": "initial",
+      "primary": {
+        "title": {
+          "type": "StructuredText",
+          "config": {
+            "label": "title",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "heading2,heading3,heading4,heading5,heading6,strong,em"
+          }
+        },
+        "columns": {
+          "type": "Number",
+          "config": {
+            "label": "columns",
+            "placeholder": "4"
+          }
+        },
+        "section_id": {
+          "type": "Text",
+          "config": {
+            "label": "section_id"
+          }
+        }
+      },
+      "items": {
+        "item_title": {
+          "type": "StructuredText",
+          "config": {
+            "single": "heading1,heading2,heading3,heading4,heading5,heading6",
+            "label": "item_title"
+          }
+        },
+        "icon_name": {
+          "type": "Text",
+          "config": {
+            "label": "icon_name"
+          }
+        },
+        "item_description": {
+          "type": "StructuredText",
+          "config": {
+            "single": "paragraph",
+            "label": "item_description"
+          }
+        },
+        "icon_background_color": {
+          "type": "Color",
+          "config": {
+            "label": "icon_background_color"
+          }
+        }
+      }
+    }
+  ]
+}

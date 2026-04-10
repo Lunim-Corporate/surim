@@ -1,0 +1,21 @@
+[build]
+  base = "apps/main"
+  command = "cd ../.. && pnpm turbo build --filter=@surim/main"
+  publish = ".next"
+
+[build.environment]
+  SECRETS_SCAN_OMIT_KEYS = "NEXT_PUBLIC_PRISMIC_ENVIRONMENT,NEXT_PUBLIC_SUPABASE_ANON_KEY,NEXT_PUBLIC_SUPABASE_URL,PRISMIC_API_ENDPOINT"
+
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
+
+[[redirects]]
+  from = "https://studio.surim.io/*"
+  to = "https://surim.io/digital/:splat"
+  status = 301
+  force = true
+
+[[headers]]
+  for = "/api/og*"
+  [headers.values]
+    Cache-Control = "no-store, no-cache, must-revalidate, max-age=0"

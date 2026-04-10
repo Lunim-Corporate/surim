@@ -1,0 +1,17 @@
+/* AI Automation Subdomain Brand Styles */
+
+:root {
+  /* Brand colors for ai.lunim.io */
+  --ai-brand-primary: #0066ff;
+  --ai-brand-secondary: #00ccff;
+  --ai-brand-accent: #ff00ff;
+  --ai-brand-bg: #0a0a0a;
+  --ai-brand-text: #ffffff;
+}
+
+/* Override global styles for AI subdomain */
+body {
+  /* Add any subdomain-specific body styles here */
+}
+
+/* Add any additional subdomain-specific styles */

@@ -1,0 +1,69 @@
+{
+  "id": "blog_list",
+  "type": "SharedSlice",
+  "name": "BlogList",
+  "description": "BlogList",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "heading": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Heading",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "heading2"
+          }
+        },
+        "intro": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Intro",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "paragraph"
+          }
+        },
+        "page_size": {
+          "type": "Number",
+          "config": {
+            "label": "Page size",
+            "placeholder": "12"
+          }
+        },
+        "category_filter": {
+          "type": "Text",
+          "config": {
+            "label": "Category filter",
+            "placeholder": ""
+          }
+        },
+        "show_author": {
+          "type": "Boolean",
+          "config": {
+            "label": "Show Author",
+            "placeholder_false": "false",
+            "placeholder_true": "true",
+            "default_value": true
+          }
+        },
+        "show_date": {
+          "type": "Boolean",
+          "config": {
+            "label": "Show Date",
+            "placeholder_false": "false",
+            "placeholder_true": "true",
+            "default_value": true
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}

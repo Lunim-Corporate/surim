@@ -1,0 +1,17 @@
+{
+  "extends": "@surim/config/tsconfig/nextjs.json",
+  "compilerOptions": {
+    "paths": {
+      "@/*": ["./src/*"]
+    },
+    "typeRoots": ["./node_modules/@types"]
+  },
+  "include": [
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    "next-env.d.ts",
+    "../../prismicio-types.d.ts"
+  ],
+  "exclude": ["node_modules"]
+}

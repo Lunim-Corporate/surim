@@ -1,0 +1,119 @@
+{
+  "id": "footer",
+  "type": "SharedSlice",
+  "name": "Footer",
+  "description": "Footer",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "company_name": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Company Name",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "heading2,heading3,heading4,heading5,heading6,strong,em"
+          }
+        },
+        "navigation_links_title": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Navigation Links Title",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "heading2,heading3,heading4,heading5,heading6,strong,em"
+          }
+        },
+        "contact_information_title": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Contact Information Title",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "heading2,heading4,heading3,heading6,heading5,strong,em"
+          }
+        },
+        "tagline": {
+          "type": "Text",
+          "config": {
+            "label": "Tagline",
+            "placeholder": ""
+          }
+        },
+        "links": {
+          "type": "Group",
+          "config": {
+            "label": "Links",
+            "repeat": true,
+            "fields": {
+              "link": {
+                "type": "Link",
+                "config": {
+                  "label": "Link Label",
+                  "placeholder": "",
+                  "select": null,
+                  "allowTargetBlank": true,
+                  "allowText": true,
+                  "repeat": false
+                }
+              }
+            }
+          }
+        },
+        "company_email": {
+          "type": "Text",
+          "config": {
+            "label": "Company Email",
+            "placeholder": ""
+          }
+        },
+        "company_phone_number": {
+          "type": "Text",
+          "config": {
+            "label": "Company Phone Number",
+            "placeholder": ""
+          }
+        },
+        "company_address": {
+          "type": "Text",
+          "config": {
+            "label": "Company Address",
+            "placeholder": ""
+          }
+        },
+        "copyright_text": {
+          "type": "Text",
+          "config": {
+            "label": "Copyright Text",
+            "placeholder": ""
+          }
+        },
+        "privacy_policy": {
+          "type": "Link",
+          "config": {
+            "label": "Privacy Policy",
+            "placeholder": "",
+            "select": null,
+            "allowTargetBlank": true,
+            "allowText": true,
+            "repeat": false
+          }
+        },
+        "back_to_top_text": {
+          "type": "Text",
+          "config": {
+            "label": "Back To Top Text",
+            "placeholder": ""
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}

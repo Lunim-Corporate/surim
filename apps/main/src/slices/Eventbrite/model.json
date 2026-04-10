@@ -1,0 +1,51 @@
+{
+  "id": "eventbrite",
+  "type": "SharedSlice",
+  "name": "Eventbrite",
+  "description": "Eventbrite",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "heading": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Heading",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "paragraph,heading1,heading2,strong,em"
+          }
+        },
+        "description": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Description",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "paragraph,heading5,heading6,strong,em"
+          }
+        },
+        "eventbrite_event_id": {
+          "type": "Text",
+          "config": {
+            "label": "Eventbrite Event ID",
+            "placeholder": ""
+          }
+        },
+        "location_override": {
+          "type": "Text",
+          "config": {
+            "label": "Location Override",
+            "placeholder": ""
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}

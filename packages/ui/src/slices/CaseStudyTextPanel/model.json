@@ -1,0 +1,95 @@
+{
+  "id": "case_study_text_panel",
+  "type": "SharedSlice",
+  "name": "CaseStudyTextPanel",
+  "description": "CaseStudyTextPanel",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Challenge",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "challenge_title": {
+          "type": "StructuredText",
+          "config": {
+            "label": "challenge_title",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "heading2,heading3,heading4,heading5,heading6,strong,em"
+          }
+        },
+        "challenge_content": {
+          "type": "StructuredText",
+          "config": {
+            "label": "challenge_content",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "paragraph,heading3,heading4,heading5,heading6,strong,em,list-item,o-list-item,hyperlink,image"
+          }
+        }
+      },
+      "items": {}
+    },
+    {
+      "id": "solutionTextPanel",
+      "name": "Solution Text Panel",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "solution_title": {
+          "type": "StructuredText",
+          "config": {
+            "label": "solution_title",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "heading2,heading3,heading4,heading5,heading6,strong,em"
+          }
+        },
+        "solution_content": {
+          "type": "StructuredText",
+          "config": {
+            "label": "solution_content",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "paragraph,strong,em,list-item,o-list-item,heading3,heading4,heading5,heading6"
+          }
+        }
+      },
+      "items": {}
+    },
+    {
+      "id": "impactTextPanel",
+      "name": "Impact Text Panel",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "impact_title": {
+          "type": "StructuredText",
+          "config": {
+            "label": "impact_title",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "heading2,heading3,heading4,heading5,heading6,strong,em"
+          }
+        },
+        "impact_content": {
+          "type": "StructuredText",
+          "config": {
+            "label": "impact_content",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "paragraph,strong,em,list-item,o-list-item,heading3,heading4,heading5,heading6"
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+export const lunaProcessingPhrases: string[] = [
+  "Just handling some stuff behind the scenes",
+  "Let me find out what's taking so long, i'll be with you soon",
+  "Your message met with some resistance, but i've send out a team to rescue it",
+  "I'm carefully piecing together a plan just for you, one moment",
+  "I'm a bit off today but i'll get up to speed in a second, bear with me",
+  "Let me figure this out",
+  "Working on your plan",
+  "Putting the pieces together",
+  "Almost there",
+  "Just a moment more",
+  "Thinking about the best approach",
+  "Let me see here",
+  "Connecting the dots",
+  "Making sense of everything",
+];

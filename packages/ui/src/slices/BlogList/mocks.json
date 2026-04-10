@@ -1,0 +1,49 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"heading": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading2",
+						"content": {
+							"text": "Slight"
+						}
+					}
+				]
+			},
+			"intro": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Lorem exercitation veniam non minim consectetur quis. Adipisicing qui nulla nulla tempor excepteur. Exercitation consequat exercitation aliquip dolore pariatur magna ipsum ea dolor."
+						}
+					}
+				]
+			},
+			"page_size": {
+				"__TYPE__": "FieldContent",
+				"value": "72",
+				"type": "Number"
+			},
+			"category_filter": {
+				"__TYPE__": "FieldContent",
+				"value": "image",
+				"type": "Text"
+			},
+			"show_author": {
+				"__TYPE__": "BooleanContent",
+				"value": false
+			},
+			"show_date": {
+				"__TYPE__": "BooleanContent",
+				"value": false
+			}
+		},
+		"items": []
+	}
+]

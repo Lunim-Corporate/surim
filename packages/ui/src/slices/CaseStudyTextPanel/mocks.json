@@ -1,0 +1,99 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"challenge_title": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading2",
+						"content": {
+							"text": "Except"
+						}
+					}
+				]
+			},
+			"challenge_content": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Ea id fugiat irure. Reprehenderit culpa aliquip proident laborum irure anim quis tempor irure minim officia. Fugiat labore cillum dolore ullamco proident velit cillum sint."
+						}
+					}
+				]
+			}
+		},
+		"items": []
+	},
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "solutionTextPanel",
+		"primary": {
+			"solution_title": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading2",
+						"content": {
+							"text": "Search"
+						}
+					}
+				]
+			},
+			"solution_content": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Lorem nulla laboris quis commodo est ad aliqua."
+						}
+					}
+				]
+			}
+		},
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": []
+			}
+		]
+	},
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "impactTextPanel",
+		"primary": {
+			"impact_title": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading2",
+						"content": {
+							"text": "Truth"
+						}
+					}
+				]
+			},
+			"impact_content": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Aliquip pariatur aliqua deserunt proident ipsum esse consectetur eu aliquip amet dolor proident occaecat laborum fugiat. Occaecat exercitation fugiat eiusmod reprehenderit incididunt nulla eiusmod nisi mollit velit. Laboris nisi nostrud minim ad ipsum duis est."
+						}
+					}
+				]
+			}
+		},
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": []
+			}
+		]
+	}
+]

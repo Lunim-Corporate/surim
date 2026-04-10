@@ -1,0 +1,29 @@
+{
+  "name": "@surim/lib",
+  "version": "0.0.1",
+  "private": true,
+  "exports": {
+    ".": "./src/index.ts",
+    "./supabase": "./src/supabase.ts",
+    "./stripe": "./src/stripe.ts",
+    "./gtag": "./src/gtag.ts",
+    "./ogImage": "./src/ogImage.tsx"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.74.0",
+    "resend": "^6.4.2",
+    "stripe": "^19.1.0"
+  },
+  "devDependencies": {
+    "@surim/config": "workspace:*",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "next": "15.5.7",
+    "react": "19.1.0",
+    "typescript": "^5"
+  },
+  "peerDependencies": {
+    "next": ">=15.0.0",
+    "react": ">=19.0.0"
+  }
+}

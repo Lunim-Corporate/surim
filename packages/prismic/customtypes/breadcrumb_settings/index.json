@@ -1,0 +1,27 @@
+{
+  "format": "custom",
+  "id": "breadcrumb_settings",
+  "label": "Breadcrumb Settings",
+  "repeatable": false,
+  "status": true,
+  "json": {
+    "Main": {
+      "hidden_segments": {
+        "type": "Group",
+        "config": {
+          "label": "Hidden Segments",
+          "repeat": true,
+          "fields": {
+            "segment": {
+              "type": "Text",
+              "config": {
+                "label": "Segment Slug",
+                "placeholder": ""
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

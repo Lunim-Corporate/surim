@@ -1,0 +1,48 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"title": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading2",
+						"content": {
+							"text": "Swing"
+						}
+					}
+				]
+			}
+		},
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": [
+					[
+						"question",
+						{
+							"__TYPE__": "FieldContent",
+							"value": "little",
+							"type": "Text"
+						}
+					],
+					[
+						"answer",
+						{
+							"__TYPE__": "StructuredTextContent",
+							"value": [
+								{
+									"type": "paragraph",
+									"content": {
+										"text": "Ad minim commodo qui eiusmod non incididunt occaecat ut magna reprehenderit in."
+									}
+								}
+							]
+						}
+					]
+				]
+			}
+		]
+	}
+]

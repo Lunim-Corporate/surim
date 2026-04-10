@@ -1,0 +1,91 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"title": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading1",
+						"content": {
+							"text": "Village"
+						}
+					}
+				]
+			},
+			"description": {
+				"__TYPE__": "FieldContent",
+				"value": "loose",
+				"type": "Text"
+			},
+			"team_member": {
+				"__TYPE__": "GroupContentType",
+				"value": [
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"headshot",
+								{
+									"origin": {
+										"id": "main",
+										"url": "https://images.unsplash.com/photo-1593642532973-d31b6557fa68",
+										"width": 8640,
+										"height": 8640
+									},
+									"url": "https://images.unsplash.com/photo-1593642532973-d31b6557fa68",
+									"width": 8640,
+									"height": 8640,
+									"edit": {
+										"zoom": 1,
+										"crop": {
+											"x": 0,
+											"y": 0
+										},
+										"background": "transparent"
+									},
+									"alt": "now",
+									"credits": null,
+									"__TYPE__": "ImageContent",
+									"thumbnails": {}
+								}
+							],
+							[
+								"name",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "heading2",
+											"content": {
+												"text": "Hearing"
+											}
+										}
+									]
+								}
+							],
+							[
+								"role",
+								{
+									"__TYPE__": "FieldContent",
+									"value": "triangle",
+									"type": "Text"
+								}
+							],
+							[
+								"description",
+								{
+									"__TYPE__": "FieldContent",
+									"value": "favorite",
+									"type": "Text"
+								}
+							]
+						]
+					}
+				]
+			}
+		},
+		"items": []
+	}
+]

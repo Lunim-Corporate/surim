@@ -1,0 +1,37 @@
+{
+  "id": "privacy_text_box",
+  "type": "SharedSlice",
+  "name": "PrivacyTextBox",
+  "description": "PrivacyTextBox",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "title": {
+          "type": "StructuredText",
+          "config": {
+            "label": "title",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "heading1,heading2,heading3,heading4,heading5,heading6,strong,em"
+          }
+        },
+        "page_content": {
+          "type": "StructuredText",
+          "config": {
+            "label": "page_content",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,image,embed,list-item,o-list-item,rtl"
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "id": "collectibles$default",
+  "primary": {
+    "title": [{ "type": "heading2", "text": "Virtual and Real-World Collectibles" }]
+  },
+  "primary": {
+    "title": [{ "type": "heading2", "text": "Virtual and Real-World Collectibles" }],
+    "background_image": { "dimensions": { "width": 1600, "height": 900 }, "url": "https://images.prismic.io/surim/collectibles-bg.jpg" }
+  },
+  "items": [
+    { "image": { "dimensions": { "width": 400, "height": 300 }, "url": "https://images.prismic.io/surim/collect-1.jpg" }, "title": "Tiffany Diamond", "price_label": "1.2741 ETH", "cta_label": "" },
+    { "image": { "dimensions": { "width": 400, "height": 300 }, "url": "https://images.prismic.io/surim/collect-2.jpg" }, "title": "Snake Statue", "price_label": "0.0818 ETH", "cta_label": "" },
+    { "image": { "dimensions": { "width": 400, "height": 300 }, "url": "https://images.prismic.io/surim/collect-3.jpg" }, "title": "Longleat Candelabra", "price_label": "0.1733 ETH", "cta_label": "Buy now" }
+  ]
+}

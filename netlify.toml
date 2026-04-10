@@ -1,0 +1,23 @@
+[build]
+  command = "next build"
+  publish = ".next"
+
+[build.environment]
+  SECRETS_SCAN_OMIT_KEYS = "NEXT_PUBLIC_PRISMIC_ENVIRONMENT,NEXT_PUBLIC_SUPABASE_ANON_KEY,NEXT_PUBLIC_SUPABASE_URL,PRISMIC_API_ENDPOINT"
+
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
+
+[[redirects]]
+  from = "https://studio.surim.io/*"
+  to = "https://surim.io/digital/:splat"
+  status = 301
+  force = true
+
+[[headers]]
+  # Ensure the OG image API responses are not cached by CDN/edge for long periods.
+  # This enforces conservative caching on Netlify's edge even if upstream defaults
+  # would otherwise mark responses as immutable/long-lived.
+  for = "/api/og*"
+  [headers.values]
+    Cache-Control = "no-store, no-cache, must-revalidate, max-age=0"

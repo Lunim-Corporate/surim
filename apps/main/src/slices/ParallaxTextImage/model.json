@@ -1,0 +1,152 @@
+{
+  "id": "parallax_text_image",
+  "type": "SharedSlice",
+  "name": "ParallaxTextImage",
+  "description": "Unified parallax text + image slice with variations for hero, face grid, and bullets.",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Hero",
+      "docURL": "https://example.com/slices/parallax-text-image#hero",
+      "version": "1.0.0",
+      "description": "Centered/one-column hero with parallax background, text block, and optional logo.",
+      "imageUrl": "https://images.prismic.io/placeholder/hero.png",
+      "primary": {
+        "background_image": {
+          "type": "Image",
+          "config": { "label": "Background Image", "constraint": {}, "thumbnails": [] }
+        },
+        "enable_parallax": {
+          "type": "Boolean",
+          "config": { "label": "Enable Parallax" }
+        },
+        "enable_zoom_effect": {
+          "type": "Boolean",
+          "config": { "label": "Enable Zoom Effect" }
+        },
+        "overlay_style": {
+          "type": "Select",
+          "config": {
+            "label": "Overlay Style",
+            "options": ["none", "gradient_light", "gradient_dark"],
+            "default_value": "gradient_dark"
+          }
+        },
+        "overlay_strength": {
+          "type": "Select",
+          "config": {
+            "label": "Overlay Strength",
+            "options": ["subtle", "medium", "strong"],
+            "default_value": "medium"
+          }
+        },
+        "text_alignment": {
+          "type": "Select",
+          "config": {
+            "label": "Text Alignment",
+            "options": ["left", "center", "right"],
+            "default_value": "left"
+          }
+        },
+        "content_position": {
+          "type": "Select",
+          "config": {
+            "label": "Content Position",
+            "options": ["top-left", "center"],
+            "default_value": "top-left"
+          }
+        },
+        "accent_color": { "type": "Color", "config": { "label": "Accent Color" } },
+        "text_color": { "type": "Color", "config": { "label": "Text Color" } },
+        "spacing_top": { "type": "Select", "config": { "label": "Top Spacing", "options": ["tight", "normal", "relaxed"], "default_value": "normal" } },
+        "spacing_bottom": { "type": "Select", "config": { "label": "Bottom Spacing", "options": ["tight", "normal", "relaxed"], "default_value": "normal" } },
+        "animation_preset": { "type": "Select", "config": { "label": "Animation Preset", "options": ["none", "fade-up", "slide-left", "stagger-strong"], "default_value": "fade-up" } },
+        "style_preset": { "type": "Select", "config": { "label": "Style Preset", "options": ["default", "cyanGlow", "noir"], "default_value": "default" } },
+        "eyebrow_text": { "type": "Text", "config": { "label": "Eyebrow" } },
+        "heading": {
+          "type": "StructuredText",
+          "config": { "label": "Heading", "single": "heading1,heading2" }
+        },
+        "subtitle": { "type": "Text", "config": { "label": "Subtitle" } },
+        "body_text": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Body Text",
+            "multi": "paragraph,preformatted,strong,em,hyperlink,list-item,o-list-item"
+          }
+        },
+        "logo": { "type": "Image", "config": { "label": "Logo", "constraint": {}, "thumbnails": [] } }
+      },
+      "items": {}
+    },
+    {
+      "id": "faceGrid",
+      "name": "Face Grid",
+      "docURL": "https://example.com/slices/parallax-text-image#face-grid",
+      "version": "1.0.0",
+      "description": "Two-column layout: text left, face grid right.",
+      "imageUrl": "https://images.prismic.io/placeholder/face-grid.png",
+      "primary": {
+        "background_image": {
+          "type": "Image",
+          "config": { "label": "Background Image", "constraint": {}, "thumbnails": [] }
+        },
+        "enable_parallax": { "type": "Boolean", "config": { "label": "Enable Parallax" } },
+        "enable_zoom_effect": { "type": "Boolean", "config": { "label": "Enable Zoom Effect" } },
+        "overlay_style": {
+          "type": "Select",
+          "config": { "label": "Overlay Style", "options": ["none", "gradient_light", "gradient_dark"], "default_value": "gradient_dark" }
+        },
+        "overlay_strength": { "type": "Select", "config": { "label": "Overlay Strength", "options": ["subtle", "medium", "strong"], "default_value": "medium" } },
+        "text_alignment": {
+          "type": "Select",
+          "config": { "label": "Text Alignment", "options": ["left", "center", "right"], "default_value": "left" }
+        },
+        "accent_color": { "type": "Color", "config": { "label": "Accent Color" } },
+        "text_color": { "type": "Color", "config": { "label": "Text Color" } },
+        "spacing_top": { "type": "Select", "config": { "label": "Top Spacing", "options": ["tight", "normal", "relaxed"], "default_value": "normal" } },
+        "spacing_bottom": { "type": "Select", "config": { "label": "Bottom Spacing", "options": ["tight", "normal", "relaxed"], "default_value": "normal" } },
+        "animation_preset": { "type": "Select", "config": { "label": "Animation Preset", "options": ["none", "fade-up", "slide-left", "stagger-strong"], "default_value": "fade-up" } },
+        "style_preset": { "type": "Select", "config": { "label": "Style Preset", "options": ["default", "cyanGlow", "noir"], "default_value": "default" } },
+        "eyebrow_text": { "type": "Text", "config": { "label": "Eyebrow" } },
+        "heading": { "type": "StructuredText", "config": { "label": "Heading", "single": "heading1,heading2" } },
+        "subtitle": { "type": "Text", "config": { "label": "Subtitle" } },
+        "body_text": { "type": "StructuredText", "config": { "label": "Body Text", "multi": "paragraph,preformatted,strong,em,hyperlink,list-item,o-list-item" } }
+      },
+      "items": {
+        "face_image": { "type": "Image", "config": { "label": "Face Image", "constraint": {}, "thumbnails": [] } },
+        "person_name": { "type": "Text", "config": { "label": "Person Name" } }
+      }
+    },
+    {
+      "id": "bullets",
+      "name": "Bullets",
+      "docURL": "https://example.com/slices/parallax-text-image#bullets",
+      "version": "1.0.0",
+      "description": "One-column text and a list of bullet points (The Shoot pattern).",
+      "imageUrl": "https://images.prismic.io/placeholder/bullets.png",
+      "primary": {
+        "background_image": { "type": "Image", "config": { "label": "Background Image", "constraint": {}, "thumbnails": [] } },
+        "enable_parallax": { "type": "Boolean", "config": { "label": "Enable Parallax" } },
+        "enable_zoom_effect": { "type": "Boolean", "config": { "label": "Enable Zoom Effect" } },
+        "overlay_style": { "type": "Select", "config": { "label": "Overlay Style", "options": ["none", "gradient_light", "gradient_dark"], "default_value": "gradient_dark" } },
+        "overlay_strength": { "type": "Select", "config": { "label": "Overlay Strength", "options": ["subtle", "medium", "strong"], "default_value": "medium" } },
+        "text_alignment": { "type": "Select", "config": { "label": "Text Alignment", "options": ["left", "center", "right"], "default_value": "left" } },
+        "content_position": { "type": "Select", "config": { "label": "Content Position", "options": ["top-left", "center"], "default_value": "top-left" } },
+        "accent_color": { "type": "Color", "config": { "label": "Accent Color" } },
+        "text_color": { "type": "Color", "config": { "label": "Text Color" } },
+        "spacing_top": { "type": "Select", "config": { "label": "Top Spacing", "options": ["tight", "normal", "relaxed"], "default_value": "normal" } },
+        "spacing_bottom": { "type": "Select", "config": { "label": "Bottom Spacing", "options": ["tight", "normal", "relaxed"], "default_value": "normal" } },
+        "animation_preset": { "type": "Select", "config": { "label": "Animation Preset", "options": ["none", "fade-up", "slide-left", "stagger-strong"], "default_value": "fade-up" } },
+        "style_preset": { "type": "Select", "config": { "label": "Style Preset", "options": ["default", "cyanGlow", "noir"], "default_value": "default" } },
+        "eyebrow_text": { "type": "Text", "config": { "label": "Eyebrow" } },
+        "heading": { "type": "StructuredText", "config": { "label": "Heading", "single": "heading1,heading2" } },
+        "subtitle": { "type": "Text", "config": { "label": "Subtitle" } },
+        "body_text": { "type": "StructuredText", "config": { "label": "Body Text", "multi": "paragraph,preformatted,strong,em,hyperlink,list-item,o-list-item" } }
+      },
+      "items": {
+        "bullet_point": { "type": "Text", "config": { "label": "Bullet Point" } }
+      }
+    }
+  ]
+}

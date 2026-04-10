@@ -1,0 +1,193 @@
+{
+  "id": "contact",
+  "type": "SharedSlice",
+  "name": "Contact",
+  "description": "Contact",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "main_title": {
+          "type": "StructuredText",
+          "config": {
+            "label": "main title",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "heading2,heading3,heading4,heading5,heading6,strong,em,heading1"
+          }
+        },
+        "subtitle": {
+          "type": "StructuredText",
+          "config": {
+            "label": "subtitle",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "heading2,heading3,heading4,heading5,heading6,strong,em,paragraph"
+          }
+        },
+        "contact_us_title": {
+          "type": "StructuredText",
+          "config": {
+            "label": "contact us title",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "strong,em,hyperlink"
+          }
+        },
+        "contact_us_subtitle": {
+          "type": "StructuredText",
+          "config": {
+            "label": "contact us subtitle",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "strong,em,hyperlink"
+          }
+        },
+        "office_hours_title": {
+          "type": "StructuredText",
+          "config": {
+            "label": "office hours title",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "heading2,heading3,heading4,heading5,heading6,strong,em"
+          }
+        },
+        "form_title": {
+          "type": "StructuredText",
+          "config": {
+            "label": "form title",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "heading2,heading3,heading4,heading5,heading6,strong,em"
+          }
+        },
+        "contact_info": {
+          "type": "Group",
+          "config": {
+            "label": "contact info",
+            "repeat": true,
+            "fields": {
+              "icon_name": {
+                "type": "Text",
+                "config": {
+                  "label": "icon name",
+                  "placeholder": ""
+                }
+              },
+              "title": {
+                "type": "Text",
+                "config": {
+                  "label": "title",
+                  "placeholder": ""
+                }
+              },
+              "description": {
+                "type": "Text",
+                "config": {
+                  "label": "description",
+                  "placeholder": ""
+                }
+              }
+            }
+          }
+        },
+        "office_info": {
+          "type": "Group",
+          "config": {
+            "label": "office info",
+            "repeat": true,
+            "fields": {
+              "days": {
+                "type": "Text",
+                "config": {
+                  "label": "days",
+                  "placeholder": ""
+                }
+              },
+              "hours": {
+                "type": "Text",
+                "config": {
+                  "label": "hours",
+                  "placeholder": ""
+                }
+              },
+              "is_closed": {
+                "type": "Boolean",
+                "config": {
+                  "label": "is closed",
+                  "placeholder_false": "false",
+                  "placeholder_true": "true",
+                  "default_value": false
+                }
+              }
+            }
+          }
+        },
+        "full_name_field_label": {
+          "type": "Text",
+          "config": {
+            "label": "full name field label",
+            "placeholder": ""
+          }
+        },
+        "email_field_label": {
+          "type": "Text",
+          "config": {
+            "label": "email field label",
+            "placeholder": ""
+          }
+        },
+        "company_field_label": {
+          "type": "Text",
+          "config": {
+            "label": "company field label",
+            "placeholder": ""
+          }
+        },
+        "project_budget_label": {
+          "type": "Text",
+          "config": {
+            "label": "project budget label",
+            "placeholder": ""
+          }
+        },
+        "project_goals_label": {
+          "type": "Text",
+          "config": {
+            "label": "project goals label",
+            "placeholder": ""
+          }
+        },
+        "button_label": {
+          "type": "Text",
+          "config": {
+            "label": "button label",
+            "placeholder": ""
+          }
+        },
+        "budget_options": {
+          "type": "Select",
+          "config": {
+            "label": "budget options",
+            "placeholder": "",
+            "options": [
+              "Estimated Budget",
+              "I don't know yet",
+              "I'd rather not say",
+              "Less than £500",
+              "£1000 - £5000",
+              "£5000 - £10000",
+              "Above £10000"
+            ]
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}

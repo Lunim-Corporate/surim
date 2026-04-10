@@ -1,0 +1,30 @@
+{
+  "name": "@surim/ux",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --turbopack --port 3002",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint"
+  },
+  "dependencies": {
+    "@surim/config": "workspace:*",
+    "@surim/lib": "workspace:*",
+    "@surim/prismic": "workspace:*",
+    "@surim/ui": "workspace:*",
+    "@surim/utils": "workspace:*",
+    "@fontsource/inter": "^5.2.8",
+    "@fontsource/noto-sans-display": "^5.2.10",
+    "next": "15.5.7",
+    "react": "19.1.0",
+    "react-dom": "19.1.0"
+  },
+  "devDependencies": {
+    "@netlify/plugin-nextjs": "5.15.4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "typescript": "^5"
+  }
+}

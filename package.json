@@ -1,0 +1,26 @@
+{
+  "name": "surim-io",
+  "version": "0.0.0",
+  "private": true,
+  "packageManager": "pnpm@9.15.0",
+  "scripts": {
+    "dev": "turbo dev",
+    "dev:main": "turbo dev --filter=@surim/main",
+    "dev:ai": "turbo dev --filter=@surim/ai",
+    "dev:ux": "turbo dev --filter=@surim/ux",
+    "dev:video": "turbo dev --filter=@surim/video",
+    "build": "turbo build",
+    "build:main": "turbo build --filter=@surim/main",
+    "build:ai": "turbo build --filter=@surim/ai",
+    "build:ux": "turbo build --filter=@surim/ux",
+    "build:video": "turbo build --filter=@surim/video",
+    "lint": "turbo lint",
+    "type-check": "turbo type-check",
+    "slicemachine": "turbo slicemachine --filter=@surim/prismic",
+    "codegen": "turbo codegen --filter=@surim/prismic"
+  },
+  "devDependencies": {
+    "turbo": "^2.5.4",
+    "typescript": "^5"
+  }
+}

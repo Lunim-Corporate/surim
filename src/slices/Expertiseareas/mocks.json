@@ -1,0 +1,207 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"heading": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading2",
+						"content": {
+							"text": "Globe"
+						}
+					}
+				]
+			},
+			"paragraph": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Id elit sunt amet. Proident qui sint exercitation consectetur minim anim anim officia labore eu adipisicing ea anim."
+						}
+					}
+				]
+			}
+		},
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": [
+					[
+						"icon_name",
+						{
+							"__TYPE__": "FieldContent",
+							"value": "clothes",
+							"type": "Text"
+						}
+					],
+					[
+						"item_title",
+						{
+							"__TYPE__": "StructuredTextContent",
+							"value": [
+								{
+									"type": "heading2",
+									"content": {
+										"text": "Orbit"
+									}
+								}
+							]
+						}
+					],
+					[
+						"item_description",
+						{
+							"__TYPE__": "StructuredTextContent",
+							"value": [
+								{
+									"type": "paragraph",
+									"content": {
+										"text": "Laborum in quis nulla sunt deserunt et anim nostrud. Sint labore tempor eu occaecat veniam et. Aliquip commodo excepteur aliquip sint in est quis qui pariatur ad labore."
+									}
+								}
+							]
+						}
+					],
+					[
+						"is_card_link",
+						{
+							"__TYPE__": "BooleanContent",
+							"value": false
+						}
+					],
+					[
+						"button_text",
+						{
+							"__TYPE__": "FieldContent",
+							"value": "discussion",
+							"type": "Text"
+						}
+					],
+					[
+						"card_link",
+						{
+							"key": "d56c0a9b-7193-4a26-8b2a-2510a4839399",
+							"__TYPE__": "LinkContent",
+							"value": {
+								"__TYPE__": "ExternalLink",
+								"url": "https://slicemachine.dev",
+								"text": "shade"
+							}
+						}
+					]
+				]
+			}
+		]
+	},
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "pureCards",
+		"primary": {
+			"heading": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading2",
+						"content": {
+							"text": "Shoulder"
+						}
+					}
+				]
+			},
+			"paragraph": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Eu voluptate cillum enim cupidatat nulla quis et amet cupidatat tempor nisi elit mollit consectetur. Dolor amet esse veniam laborum velit aliqua aliqua laboris excepteur ex cupidatat ea ipsum fugiat."
+						}
+					}
+				]
+			},
+			"cards": {
+				"__TYPE__": "GroupContentType",
+				"value": [
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"icon_name",
+								{
+									"__TYPE__": "FieldContent",
+									"value": "than",
+									"type": "Text"
+								}
+							],
+							[
+								"item_title",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "heading2",
+											"content": {
+												"text": "Arrow"
+											}
+										}
+									]
+								}
+							],
+							[
+								"item_description",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "Lorem et sint et nostrud quis nisi incididunt esse ea tempor consequat proident aliquip. Mollit adipisicing culpa occaecat nostrud nulla in in."
+											}
+										}
+									]
+								}
+							],
+							[
+								"is_card_link",
+								{
+									"__TYPE__": "BooleanContent",
+									"value": false
+								}
+							],
+							[
+								"card_link",
+								{
+									"key": "2d354265-bd3a-41b3-9442-0ef3bae0ddbc",
+									"__TYPE__": "LinkContent",
+									"value": {
+										"__TYPE__": "ExternalLink",
+										"url": "https://prismic.io",
+										"text": "cut"
+									}
+								}
+							],
+							[
+								"button_text",
+								{
+									"__TYPE__": "FieldContent",
+									"value": "rose",
+									"type": "Text"
+								}
+							]
+						]
+					}
+				]
+			}
+		},
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": []
+			}
+		]
+	}
+]

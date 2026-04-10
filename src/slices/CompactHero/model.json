@@ -1,0 +1,73 @@
+{
+  "id": "compact_hero",
+  "type": "SharedSlice",
+  "name": "CompactHero",
+  "description": "CompactHero",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "hero_image": {
+          "type": "Image",
+          "config": {
+            "label": "hero_image",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "hero_title": {
+          "type": "StructuredText",
+          "config": {
+            "label": "hero_title",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "heading1,heading2,heading3,heading4,heading5,heading6,strong,em"
+          }
+        },
+        "casestudycontentfields": {
+          "type": "Group",
+          "config": {
+            "label": "CaseStudyContentFields",
+            "repeat": true,
+            "fields": {}
+          }
+        },
+        "show_ask_luna": {
+          "type": "Boolean",
+          "config": {
+            "label": "Show Ask Luna",
+            "placeholder_false": "Hide Ask Luna",
+            "placeholder_true": "Show Ask Luna",
+            "default_value": true
+          }
+        },
+        "show_main_cta": {
+          "type": "Boolean",
+          "config": {
+            "label": "Show Main CTA",
+            "placeholder_false": "Hide Main CTA",
+            "placeholder_true": "Show Main CTA",
+            "default_value": true
+          }
+        },
+        "button_link": {
+          "type": "Link",
+          "config": {
+            "label": "Button Link",
+            "placeholder": "",
+            "select": null,
+            "allowTargetBlank": true,
+            "allowText": true,
+            "repeat": false
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}

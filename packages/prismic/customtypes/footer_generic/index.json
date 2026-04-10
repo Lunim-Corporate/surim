@@ -1,0 +1,35 @@
+{
+  "format": "custom",
+  "id": "footer_generic",
+  "label": "Footer Generic",
+  "repeatable": true,
+  "status": true,
+  "json": {
+    "Main": {
+      "uid": {
+        "type": "UID",
+        "config": {
+          "label": "UID"
+        }
+      },
+      "domain": {
+        "type": "Text",
+        "config": {
+          "label": "domain",
+          "placeholder": ""
+        }
+      },
+      "slices": {
+        "type": "Slices",
+        "fieldset": "Slice Zone",
+        "config": {
+          "choices": {
+            "footer": {
+              "type": "SharedSlice"
+            }
+          }
+        }
+      }
+    }
+  }
+}

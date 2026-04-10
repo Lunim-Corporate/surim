@@ -1,0 +1,243 @@
+{
+  "id": "ProjectShowcase",
+  "type": "SharedSlice",
+  "name": "ProjectShowcase",
+  "legacyPaths": {
+    "homepage::body::project_showcase": "default"
+  },
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "description": "Default",
+      "imageUrl": "",
+      "docURL": "",
+      "version": "initial",
+      "primary": {
+        "heading": {
+          "type": "StructuredText",
+          "config": {
+            "label": "heading",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "heading2,heading3,heading4,heading5,heading6,strong,em"
+          }
+        },
+        "case_study_page_link": {
+          "type": "Link",
+          "config": {
+            "label": "case_study_page_link",
+            "placeholder": "",
+            "select": null,
+            "allowTargetBlank": true,
+            "allowText": true,
+            "repeat": false
+          }
+        },
+        "show_case_study_page_link": {
+          "type": "Boolean",
+          "config": {
+            "label": "show_case_study_page_link",
+            "placeholder_false": "false",
+            "placeholder_true": "true",
+            "default_value": false
+          }
+        },
+        "case_study": {
+          "type": "Group",
+          "config": {
+            "label": "case_study",
+            "repeat": true,
+            "fields": {
+              "project_image": {
+                "type": "Image",
+                "config": {
+                  "label": "project_image",
+                  "constraint": {},
+                  "thumbnails": []
+                }
+              },
+              "project_title": {
+                "type": "StructuredText",
+                "config": {
+                  "label": "project_title",
+                  "placeholder": "",
+                  "allowTargetBlank": true,
+                  "multi": "heading2,heading3,heading4,heading5,heading6,strong,em"
+                }
+              },
+              "project_description": {
+                "type": "StructuredText",
+                "config": {
+                  "label": "project_description",
+                  "placeholder": "",
+                  "allowTargetBlank": true,
+                  "multi": "strong,em,paragraph"
+                }
+              },
+              "project_link": {
+                "type": "Link",
+                "config": {
+                  "label": "project_link",
+                  "placeholder": "",
+                  "select": null,
+                  "allowTargetBlank": true,
+                  "allowText": true,
+                  "repeat": false
+                }
+              },
+              "tags": {
+                "type": "Text",
+                "config": {
+                  "label": "tags",
+                  "placeholder": ""
+                }
+              },
+              "show_cta_button": {
+                "type": "Boolean",
+                "config": {
+                  "label": "show_cta_button",
+                  "placeholder_false": "false",
+                  "placeholder_true": "true",
+                  "default_value": true
+                }
+              },
+              "button_cta_text": {
+                "type": "Text",
+                "config": {
+                  "label": "button_cta_text",
+                  "placeholder": ""
+                }
+              }
+            }
+          }
+        }
+      },
+      "items": {}
+    },
+    {
+      "id": "projectShowcaseHero",
+      "name": "ProjectShowcaseHero",
+      "description": "Default",
+      "imageUrl": "",
+      "docURL": "",
+      "version": "initial",
+      "primary": {
+        "title": {
+          "type": "StructuredText",
+          "config": {
+            "label": "title",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "heading2,heading3,heading4,heading5,heading6,strong,em"
+          }
+        },
+        "section_id": {
+          "type": "Text",
+          "config": {
+            "label": "section_id"
+          }
+        },
+        "heading": {
+          "type": "StructuredText",
+          "config": {
+            "label": "heading",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "heading2,heading3,heading4,heading5,heading6,strong,em"
+          }
+        },
+        "case_study_page_link": {
+          "type": "Link",
+          "config": {
+            "label": "case_study_page_link",
+            "placeholder": "",
+            "select": null,
+            "allowTargetBlank": true,
+            "allowText": true,
+            "repeat": false
+          }
+        },
+        "show_case_study_page_link": {
+          "type": "Boolean",
+          "config": {
+            "label": "show_case_study_page_link",
+            "placeholder_false": "false",
+            "placeholder_true": "true",
+            "default_value": false
+          }
+        },
+        "case_study": {
+          "type": "Group",
+          "config": {
+            "label": "case_study",
+            "repeat": true,
+            "fields": {
+              "project_image": {
+                "type": "Image",
+                "config": {
+                  "label": "project_image",
+                  "constraint": {},
+                  "thumbnails": []
+                }
+              },
+              "project_title": {
+                "type": "StructuredText",
+                "config": {
+                  "label": "project_title",
+                  "placeholder": "",
+                  "allowTargetBlank": true,
+                  "multi": "heading2,heading3,heading4,heading5,heading6,strong,em"
+                }
+              },
+              "project_description": {
+                "type": "StructuredText",
+                "config": {
+                  "label": "project_description",
+                  "placeholder": "",
+                  "allowTargetBlank": true,
+                  "multi": "strong,em,paragraph"
+                }
+              },
+              "project_link": {
+                "type": "Link",
+                "config": {
+                  "label": "project_link",
+                  "placeholder": "",
+                  "select": null,
+                  "allowTargetBlank": true,
+                  "allowText": true,
+                  "repeat": false
+                }
+              },
+              "tags": {
+                "type": "Text",
+                "config": {
+                  "label": "tags",
+                  "placeholder": ""
+                }
+              },
+              "show_cta_button": {
+                "type": "Boolean",
+                "config": {
+                  "label": "show_cta_button",
+                  "placeholder_false": "false",
+                  "placeholder_true": "true",
+                  "default_value": true
+                }
+              },
+              "button_cta_text": {
+                "type": "Text",
+                "config": {
+                  "label": "button_cta_text",
+                  "placeholder": ""
+                }
+              }
+            }
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}

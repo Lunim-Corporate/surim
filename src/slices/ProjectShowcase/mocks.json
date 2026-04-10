@@ -1,0 +1,288 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"heading": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading2",
+						"content": {
+							"text": "Right"
+						}
+					}
+				]
+			},
+			"case_study_page_link": {
+				"key": "62c656c9-c42c-4845-a9aa-afd32c04a105",
+				"__TYPE__": "LinkContent",
+				"value": {
+					"__TYPE__": "ExternalLink",
+					"url": "http://google.com",
+					"text": "everybody"
+				}
+			},
+			"case_study": {
+				"__TYPE__": "GroupContentType",
+				"value": [
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"project_image",
+								{
+									"origin": {
+										"id": "main",
+										"url": "https://images.unsplash.com/photo-1493119508027-2b584f234d6c",
+										"width": 3424,
+										"height": 3424
+									},
+									"url": "https://images.unsplash.com/photo-1493119508027-2b584f234d6c",
+									"width": 3424,
+									"height": 3424,
+									"edit": {
+										"zoom": 1,
+										"crop": {
+											"x": 0,
+											"y": 0
+										},
+										"background": "transparent"
+									},
+									"alt": "thing",
+									"credits": null,
+									"__TYPE__": "ImageContent",
+									"thumbnails": {}
+								}
+							],
+							[
+								"project_title",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "heading2",
+											"content": {
+												"text": "Enough"
+											}
+										}
+									]
+								}
+							],
+							[
+								"project_description",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "Enim velit labore ad ut anim aliqua labore non quis et. Quis nulla nostrud aute voluptate aliquip nisi do sit duis velit elit est."
+											}
+										}
+									]
+								}
+							],
+							[
+								"project_link",
+								{
+									"key": "76045635-c270-4acd-8849-8f2865029542",
+									"__TYPE__": "LinkContent",
+									"value": {
+										"__TYPE__": "ExternalLink",
+										"url": "http://twitter.com",
+										"text": "youth"
+									}
+								}
+							],
+							[
+								"tags",
+								{
+									"__TYPE__": "FieldContent",
+									"value": "tales",
+									"type": "Text"
+								}
+							],
+							[
+								"show_cta_button",
+								{
+									"__TYPE__": "BooleanContent",
+									"value": true
+								}
+							],
+							[
+								"button_cta_text",
+								{
+									"__TYPE__": "FieldContent",
+									"value": "every",
+									"type": "Text"
+								}
+							]
+						]
+					}
+				]
+			},
+			"show_case_study_page_link": {
+				"__TYPE__": "BooleanContent",
+				"value": false
+			}
+		},
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": []
+			}
+		]
+	},
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "projectShowcaseHero",
+		"primary": {
+			"title": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading2",
+						"content": {
+							"text": "Manner"
+						}
+					}
+				]
+			},
+			"section_id": {
+				"__TYPE__": "FieldContent",
+				"value": "horse",
+				"type": "Text"
+			},
+			"heading": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading2",
+						"content": {
+							"text": "Lunch"
+						}
+					}
+				]
+			},
+			"case_study_page_link": {
+				"key": "e8aa3f32-6bbd-4242-ab1f-e9949e85ee85",
+				"__TYPE__": "LinkContent",
+				"value": {
+					"__TYPE__": "ExternalLink",
+					"url": "https://prismic.io",
+					"text": "five"
+				}
+			},
+			"case_study": {
+				"__TYPE__": "GroupContentType",
+				"value": [
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"project_image",
+								{
+									"origin": {
+										"id": "main",
+										"url": "https://images.unsplash.com/photo-1600804931749-2da4ce26c869",
+										"width": 3199,
+										"height": 3199
+									},
+									"url": "https://images.unsplash.com/photo-1600804931749-2da4ce26c869",
+									"width": 3199,
+									"height": 3199,
+									"edit": {
+										"zoom": 1,
+										"crop": {
+											"x": 0,
+											"y": 0
+										},
+										"background": "transparent"
+									},
+									"alt": "cave",
+									"credits": null,
+									"__TYPE__": "ImageContent",
+									"thumbnails": {}
+								}
+							],
+							[
+								"project_title",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "heading2",
+											"content": {
+												"text": "Leaving"
+											}
+										}
+									]
+								}
+							],
+							[
+								"project_description",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "Ea adipisicing non quis reprehenderit ea exercitation ex pariatur aliquip occaecat mollit eiusmod aliquip in."
+											}
+										}
+									]
+								}
+							],
+							[
+								"project_link",
+								{
+									"key": "fc42d15e-ce34-4923-91f1-ced111f55822",
+									"__TYPE__": "LinkContent",
+									"value": {
+										"__TYPE__": "ExternalLink",
+										"url": "https://prismic.io",
+										"text": "activity"
+									}
+								}
+							],
+							[
+								"tags",
+								{
+									"__TYPE__": "FieldContent",
+									"value": "sick",
+									"type": "Text"
+								}
+							],
+							[
+								"show_cta_button",
+								{
+									"__TYPE__": "BooleanContent",
+									"value": false
+								}
+							],
+							[
+								"button_cta_text",
+								{
+									"__TYPE__": "FieldContent",
+									"value": "dollar",
+									"type": "Text"
+								}
+							]
+						]
+					}
+				]
+			},
+			"show_case_study_page_link": {
+				"__TYPE__": "BooleanContent",
+				"value": false
+			}
+		},
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": []
+			}
+		]
+	}
+]

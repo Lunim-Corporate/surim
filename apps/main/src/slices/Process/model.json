@@ -1,0 +1,57 @@
+{
+  "id": "Process",
+  "type": "SharedSlice",
+  "name": "Process",
+  "legacyPaths": {
+    "homepage::body::process": "default"
+  },
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "description": "Default",
+      "imageUrl": "",
+      "docURL": "",
+      "version": "initial",
+      "primary": {
+        "title": {
+          "type": "StructuredText",
+          "config": {
+            "label": "title",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "heading2,heading3,heading4,heading5,heading6,strong,em"
+          }
+        }
+      },
+      "items": {
+        "icon_text": {
+          "type": "Text",
+          "config": {
+            "label": "icon_text"
+          }
+        },
+        "item_title": {
+          "type": "StructuredText",
+          "config": {
+            "multi": "heading1,heading2,heading3,heading4,heading5,heading6,strong,em,embed",
+            "label": "item_title"
+          }
+        },
+        "weeks": {
+          "type": "Text",
+          "config": {
+            "label": "weeks"
+          }
+        },
+        "item_description": {
+          "type": "StructuredText",
+          "config": {
+            "single": "paragraph,strong,em,list-item,o-list-item",
+            "label": "item_description"
+          }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "format": "custom",
+  "id": "video",
+  "label": "Video",
+  "repeatable": false,
+  "status": true,
+  "json": {
+    "Main": {
+      "slices": {
+        "type": "Slices",
+        "fieldset": "Slice Zone",
+        "config": {
+          "choices": {
+            "compact_hero": {
+              "type": "SharedSlice"
+            },
+            "contact": {
+              "type": "SharedSlice"
+            },
+            "breadcrumbs": {
+              "type": "SharedSlice"
+            },
+            "ServiceGrid": {
+              "type": "SharedSlice"
+            },
+            "ProjectShowcase": {
+              "type": "SharedSlice"
+            },
+            "Imageandtext": {
+              "type": "SharedSlice"
+            },
+            "Process": {
+              "type": "SharedSlice"
+            },
+            "Expertiseareas": {
+              "type": "SharedSlice"
+            },
+            "Faq": {
+              "type": "SharedSlice"
+            }
+          }
+        }
+      }
+    }
+  }
+}

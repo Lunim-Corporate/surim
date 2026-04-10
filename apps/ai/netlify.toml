@@ -1,0 +1,7 @@
+[build]
+  base = "apps/ai"
+  command = "cd ../.. && pnpm turbo build --filter=@surim/ai"
+  publish = ".next"
+
+[[plugins]]
+  package = "@netlify/plugin-nextjs"

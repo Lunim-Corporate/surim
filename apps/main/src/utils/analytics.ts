@@ -1,0 +1,16 @@
+export {
+  initGA,
+  trackPageView,
+  trackEvent,
+  trackFormSubmission,
+  trackButtonClick,
+  trackNavigation,
+  trackScrollDepth,
+  trackDownload,
+  trackVideoInteraction,
+  trackSearch,
+  trackContactForm,
+  pageview,
+  event,
+  isGAReady,
+} from "@/lib/gtag";

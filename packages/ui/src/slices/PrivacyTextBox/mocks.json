@@ -1,0 +1,31 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"title": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading1",
+						"content": {
+							"text": "Island"
+						}
+					}
+				]
+			},
+			"page_content": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Reprehenderit ex eiusmod ad adipisicing culpa commodo minim quis ullamco laboris dolore occaecat."
+						}
+					}
+				]
+			}
+		},
+		"items": []
+	}
+]
